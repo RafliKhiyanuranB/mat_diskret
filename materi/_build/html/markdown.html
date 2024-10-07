@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Teori Himpunan &#8212; My sample book</title>
+    <title>1. Hukum De Morgan dalam Teori Himpunan &#8212; My sample book</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,8 +60,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'markdown';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Content with notebooks" href="notebooks.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,9 +179,9 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Teori Himpunan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="logika%20dan%20pembuktian.html">logika matematika</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -355,7 +355,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -366,11 +368,67 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Teori Himpunan</h1>
+    <h1>1. Hukum De Morgan dalam Teori Himpunan</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. Hukum De Morgan dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-pembuktian-hukum-de-morgan">Contoh Soal: Pembuktian Hukum De Morgan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-hukum-1-a-cap-b-c-a-c-cup-b-c">Membuktikan Hukum 1: ((A \cap B)^c = A^c \cup B^c)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-hukum-2-a-cup-b-c-a-c-cap-b-c">Membuktikan Hukum 2: ((A \cup B)^c = A^c \cap B^c)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#absorption-laws-dalam-teori-himpunan">2. Absorption Laws dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi-untuk-gabungan-union">1. <strong>Hukum Absorpsi untuk Gabungan (Union)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi-untuk-irisan-intersection">2. <strong>Hukum Absorpsi untuk Irisan (Intersection)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-dan-pembuktian">Contoh Soal dan Pembuktian</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1-hukum-absorpsi-untuk-gabungan-union">Contoh 1: Hukum Absorpsi untuk Gabungan (Union)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah">Langkah-langkah:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2-hukum-absorpsi-untuk-irisan-intersection">Contoh 2: Hukum Absorpsi untuk Irisan (Intersection)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Langkah-langkah:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-intuitif">Penjelasan Intuitif</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-laws-dalam-teori-himpunan">Complement Laws dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplemen-dari-himpunan-semesta-universal-set-adalah-himpunan-kosong">1. <strong>Komplemen dari Himpunan Semesta (Universal Set) adalah Himpunan Kosong</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplemen-dari-himpunan-itu-sendiri-adalah-himpunan-kosong">2. <strong>Komplemen dari Himpunan itu Sendiri adalah Himpunan Kosong</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-dengan-contoh-soal">Bukti dengan Contoh Soal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#misalkan">Misalkan:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1-komplemen-dari-gabungan-union">Contoh 1: <strong>Komplemen dari Gabungan (Union)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2-komplemen-dari-irisan-intersection">Contoh 2: <strong>Komplemen dari Irisan (Intersection)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Kesimpulan:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma">Algoritma</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-algoritma">Definisi Algoritma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithm-sequential-search">Algorithm Sequential Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-binary-search">Algoritma Binary Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode">Pseudocode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#big-o-algoritma">Big O algoritma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-big-o-dari-algorithm-sequential-search">Hitung Big O dari Algorithm Sequential Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">reference</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -380,8 +438,323 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="teori-himpunan">
-<h1>Teori Himpunan<a class="headerlink" href="#teori-himpunan" title="Link to this heading">#</a></h1>
+  <section id="hukum-de-morgan-dalam-teori-himpunan">
+<h1>1. Hukum De Morgan dalam Teori Himpunan<a class="headerlink" href="#hukum-de-morgan-dalam-teori-himpunan" title="Link to this heading">#</a></h1>
+<p>Hukum De Morgan terdiri dari dua aturan utama:</p>
+<ol class="arabic">
+<li><p><strong>Komplemen dari Irisan (Intersection)</strong>:
+[
+(A \cap B)^c = A^c \cup B^c
+]</p>
+<p><strong>Penjelasan</strong>: Komplemen dari irisan dua himpunan adalah himpunan elemen yang bukan anggota dari kedua himpunan tersebut, yaitu anggota yang berada di luar A atau B. Hasilnya sama dengan gabungan dari komplemen masing-masing himpunan.</p>
+</li>
+<li><p><strong>Komplemen dari Gabungan (Union)</strong>:
+[
+(A \cup B)^c = A^c \cap B^c
+]</p>
+<p><strong>Penjelasan</strong>: Komplemen dari gabungan dua himpunan adalah himpunan elemen yang tidak ada di salah satu himpunan tersebut. Ini sama dengan irisan dari komplemen himpunan A dan B.</p>
+</li>
+</ol>
+<section id="contoh-soal-pembuktian-hukum-de-morgan">
+<h2>Contoh Soal: Pembuktian Hukum De Morgan<a class="headerlink" href="#contoh-soal-pembuktian-hukum-de-morgan" title="Link to this heading">#</a></h2>
+<p>Misalkan kita memiliki dua himpunan:</p>
+<ul class="simple">
+<li><p>A = {1, 2, 3, 4}</p></li>
+<li><p>B = {3, 4, 5, 6}</p></li>
+</ul>
+<p>Serta semesta (U) adalah:</p>
+<ul class="simple">
+<li><p>U = {1, 2, 3, 4, 5, 6, 7, 8}</p></li>
+</ul>
+<section id="membuktikan-hukum-1-a-cap-b-c-a-c-cup-b-c">
+<h3>Membuktikan Hukum 1: ((A \cap B)^c = A^c \cup B^c)<a class="headerlink" href="#membuktikan-hukum-1-a-cap-b-c-a-c-cup-b-c" title="Link to this heading">#</a></h3>
+<p><strong>Langkah-langkah:</strong></p>
+<ol class="arabic">
+<li><p><strong>Irisan A dan B (A ∩ B)</strong>:
+[
+A \cap B = {3, 4}
+]</p></li>
+<li><p><strong>Komplemen dari A ∩ B ((A ∩ B)^c)</strong>:
+[
+(A \cap B)^c = U - {3, 4} = {1, 2, 5, 6, 7, 8}
+]</p></li>
+<li><p><strong>Komplemen A (A^c) dan Komplemen B (B^c)</strong>:</p>
+<ul class="simple">
+<li><p>A^c: Elemen di semesta U yang tidak ada di A:
+[
+A^c = U - A = {5, 6, 7, 8}
+]</p></li>
+<li><p>B^c: Elemen di semesta U yang tidak ada di B:
+[
+B^c = U - B = {1, 2, 7, 8}
+]</p></li>
+</ul>
+</li>
+<li><p><strong>Gabungan dari Komplemen A dan B (A^c ∪ B^c)</strong>:
+[
+A^c \cup B^c = {5, 6, 7, 8} \cup {1, 2, 7, 8} = {1, 2, 5, 6, 7, 8}
+]</p></li>
+<li><p><strong>Hasil</strong>:
+[
+(A \cap B)^c = A^c \cup B^c = {1, 2, 5, 6, 7, 8}
+]</p>
+<p>Ini membuktikan bahwa Hukum 1 benar.</p>
+</li>
+</ol>
+</section>
+<section id="membuktikan-hukum-2-a-cup-b-c-a-c-cap-b-c">
+<h3>Membuktikan Hukum 2: ((A \cup B)^c = A^c \cap B^c)<a class="headerlink" href="#membuktikan-hukum-2-a-cup-b-c-a-c-cap-b-c" title="Link to this heading">#</a></h3>
+<p><strong>Langkah-langkah:</strong></p>
+<ol class="arabic">
+<li><p><strong>Gabungan A dan B (A ∪ B)</strong>:
+[
+A \cup B = {1, 2, 3, 4, 5, 6}
+]</p></li>
+<li><p><strong>Komplemen dari A ∪ B ((A ∪ B)^c)</strong>:
+[
+(A \cup B)^c = U - {1, 2, 3, 4, 5, 6} = {7, 8}
+]</p></li>
+<li><p><strong>Komplemen A (A^c) dan Komplemen B (B^c)</strong>:</p>
+<ul class="simple">
+<li><p>A^c: ({5, 6, 7, 8})</p></li>
+<li><p>B^c: ({1, 2, 7, 8})</p></li>
+</ul>
+</li>
+<li><p><strong>Irisan dari Komplemen A dan B (A^c ∩ B^c)</strong>:
+[
+A^c \cap B^c = {5, 6, 7, 8} \cap {1, 2, 7, 8} = {7, 8}
+]</p></li>
+<li><p><strong>Hasil</strong>:
+[
+(A \cup B)^c = A^c \cap B^c = {7, 8}
+]</p>
+<p>Ini membuktikan bahwa Hukum 2 benar.</p>
+</li>
+</ol>
+</section>
+</section>
+<section id="kesimpulan">
+<h2>Kesimpulan:<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
+<p>Hukum De Morgan mempermudah perhitungan operasi himpunan yang melibatkan komplemen, irisan, dan gabungan. Hukum ini berguna dalam berbagai bidang matematika dan ilmu komputer, terutama dalam logika dan pemrograman.</p>
+<hr class="docutils" />
+</section>
+</section>
+<section id="absorption-laws-dalam-teori-himpunan">
+<h1>2. Absorption Laws dalam Teori Himpunan<a class="headerlink" href="#absorption-laws-dalam-teori-himpunan" title="Link to this heading">#</a></h1>
+<p><strong>Absorption Law</strong> dalam teori himpunan menyederhanakan operasi gabungan (union) dan irisan (intersection). Terdapat dua bentuk dari hukum ini:</p>
+<section id="hukum-absorpsi-untuk-gabungan-union">
+<h2>1. <strong>Hukum Absorpsi untuk Gabungan (Union)</strong><a class="headerlink" href="#hukum-absorpsi-untuk-gabungan-union" title="Link to this heading">#</a></h2>
+<p>[
+A \cup (A \cap B) = A
+]
+Artinya, jika kita melakukan operasi gabungan antara himpunan (A) dan hasil dari irisan (A) dengan (B), hasil akhirnya adalah himpunan (A).</p>
+</section>
+<section id="hukum-absorpsi-untuk-irisan-intersection">
+<h2>2. <strong>Hukum Absorpsi untuk Irisan (Intersection)</strong><a class="headerlink" href="#hukum-absorpsi-untuk-irisan-intersection" title="Link to this heading">#</a></h2>
+<p>[
+A \cap (A \cup B) = A
+]
+Artinya, jika kita melakukan operasi irisan antara himpunan (A) dan hasil dari gabungan (A) dengan (B), hasil akhirnya adalah himpunan (A).</p>
+</section>
+</section>
+<section id="contoh-soal-dan-pembuktian">
+<h1>Contoh Soal dan Pembuktian<a class="headerlink" href="#contoh-soal-dan-pembuktian" title="Link to this heading">#</a></h1>
+<section id="contoh-1-hukum-absorpsi-untuk-gabungan-union">
+<h2>Contoh 1: Hukum Absorpsi untuk Gabungan (Union)<a class="headerlink" href="#contoh-1-hukum-absorpsi-untuk-gabungan-union" title="Link to this heading">#</a></h2>
+<p>Misalkan kita punya dua himpunan:
+[
+A = {1, 2, 3}, \quad B = {2, 3, 4}
+]</p>
+<p>Mari kita buktikan bahwa:
+[
+A \cup (A \cap B) = A
+]</p>
+<section id="langkah-langkah">
+<h3>Langkah-langkah:<a class="headerlink" href="#langkah-langkah" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Cari Irisan (A \cap B)</strong>:
+[
+A \cap B = {2, 3}
+]
+Karena (2) dan (3) ada di kedua himpunan (A) dan (B).</p></li>
+<li><p><strong>Gabungkan (A) dengan (A \cap B)</strong>:
+[
+A \cup (A \cap B) = {1, 2, 3} \cup {2, 3} = {1, 2, 3}
+]</p></li>
+<li><p><strong>Kesimpulan</strong>:
+Hasil akhirnya adalah (A), sehingga hukum absorsi untuk gabungan terbukti benar.</p></li>
+</ol>
+</section>
+</section>
+<section id="contoh-2-hukum-absorpsi-untuk-irisan-intersection">
+<h2>Contoh 2: Hukum Absorpsi untuk Irisan (Intersection)<a class="headerlink" href="#contoh-2-hukum-absorpsi-untuk-irisan-intersection" title="Link to this heading">#</a></h2>
+<p>Sekarang, mari kita buktikan bahwa:
+[
+A \cap (A \cup B) = A
+]</p>
+<section id="id1">
+<h3>Langkah-langkah:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Cari Gabungan (A \cup B)</strong>:
+[
+A \cup B = {1, 2, 3, 4}
+]</p></li>
+<li><p><strong>Cari Irisan antara (A) dan (A \cup B)</strong>:
+[
+A \cap (A \cup B) = {1, 2, 3} \cap {1, 2, 3, 4} = {1, 2, 3}
+]</p></li>
+<li><p><strong>Kesimpulan</strong>:
+Hasil akhirnya adalah (A), sehingga hukum absorsi untuk irisan terbukti benar.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="penjelasan-intuitif">
+<h1>Penjelasan Intuitif<a class="headerlink" href="#penjelasan-intuitif" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Hukum Absorpsi untuk Gabungan</strong> menyatakan bahwa jika kita sudah memiliki seluruh elemen dari (A), maka menambahkan bagian (A \cap B) tidak akan mengubah hasil, karena (A) sudah mencakup semua elemen tersebut.</p></li>
+<li><p><strong>Hukum Absorpsi untuk Irisan</strong> menyatakan bahwa ketika kita mencari irisan dari (A) dengan gabungan (A) dan (B), himpunan (A) sudah sepenuhnya terdapat di dalam gabungan tersebut, sehingga hasilnya tetap (A).</p></li>
+</ul>
+<p>Hukum ini sangat berguna dalam menyederhanakan ekspresi himpunan dalam banyak kasus.</p>
+<hr class="docutils" />
+</section>
+<section id="complement-laws-dalam-teori-himpunan">
+<h1>Complement Laws dalam Teori Himpunan<a class="headerlink" href="#complement-laws-dalam-teori-himpunan" title="Link to this heading">#</a></h1>
+<p><strong>Complement Laws</strong> menggambarkan hubungan antara suatu himpunan dengan komplemennya. Ada dua hukum utama:</p>
+<section id="komplemen-dari-himpunan-semesta-universal-set-adalah-himpunan-kosong">
+<h2>1. <strong>Komplemen dari Himpunan Semesta (Universal Set) adalah Himpunan Kosong</strong><a class="headerlink" href="#komplemen-dari-himpunan-semesta-universal-set-adalah-himpunan-kosong" title="Link to this heading">#</a></h2>
+<p>[
+A \cup A^c = U
+]
+Himpunan <strong>A</strong> gabung komplemen <strong>A</strong> sama dengan himpunan semesta <strong>U</strong>.</p>
+</section>
+<section id="komplemen-dari-himpunan-itu-sendiri-adalah-himpunan-kosong">
+<h2>2. <strong>Komplemen dari Himpunan itu Sendiri adalah Himpunan Kosong</strong><a class="headerlink" href="#komplemen-dari-himpunan-itu-sendiri-adalah-himpunan-kosong" title="Link to this heading">#</a></h2>
+<p>[
+A \cap A^c = \emptyset
+]
+Himpunan <strong>A</strong> irisan dengan komplemen <strong>A</strong> adalah himpunan kosong.</p>
+</section>
+<section id="bukti-dengan-contoh-soal">
+<h2>Bukti dengan Contoh Soal<a class="headerlink" href="#bukti-dengan-contoh-soal" title="Link to this heading">#</a></h2>
+<section id="misalkan">
+<h3>Misalkan:<a class="headerlink" href="#misalkan" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Himpunan Semesta (U) = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}</p></li>
+<li><p>Himpunan A = {1, 2, 3, 4, 5}</p></li>
+<li><p>Komplemen dari A (A^c) = {6, 7, 8, 9, 10}</p></li>
+</ul>
+</section>
+<section id="contoh-1-komplemen-dari-gabungan-union">
+<h3>Contoh 1: <strong>Komplemen dari Gabungan (Union)</strong><a class="headerlink" href="#contoh-1-komplemen-dari-gabungan-union" title="Link to this heading">#</a></h3>
+<p>Buktikan bahwa:<br />
+[
+A \cup A^c = U
+]</p>
+<p><strong>Langkah 1:</strong><br />
+Gabungkan himpunan <strong>A</strong> dan komplemennya <strong>A^c</strong>:</p>
+<ul class="simple">
+<li><p>A = {1, 2, 3, 4, 5}</p></li>
+<li><p>A^c = {6, 7, 8, 9, 10}</p></li>
+</ul>
+<p><strong>Langkah 2:</strong><br />
+Lakukan operasi gabungan (union):
+[
+A \cup A^c = {1, 2, 3, 4, 5} \cup {6, 7, 8, 9, 10} = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+]</p>
+<p>Hasilnya adalah himpunan semesta <strong>U</strong>, yang membuktikan hukum:
+[
+A \cup A^c = U
+]</p>
+</section>
+<section id="contoh-2-komplemen-dari-irisan-intersection">
+<h3>Contoh 2: <strong>Komplemen dari Irisan (Intersection)</strong><a class="headerlink" href="#contoh-2-komplemen-dari-irisan-intersection" title="Link to this heading">#</a></h3>
+<p>Buktikan bahwa:<br />
+[
+A \cap A^c = \emptyset
+]</p>
+<p><strong>Langkah 1:</strong><br />
+Iriskan himpunan <strong>A</strong> dan komplemennya <strong>A^c</strong>:</p>
+<ul class="simple">
+<li><p>A = {1, 2, 3, 4, 5}</p></li>
+<li><p>A^c = {6, 7, 8, 9, 10}</p></li>
+</ul>
+<p><strong>Langkah 2:</strong><br />
+Lakukan operasi irisan (intersection):
+[
+A \cap A^c = {1, 2, 3, 4, 5} \cap {6, 7, 8, 9, 10} = \emptyset
+]</p>
+<p>Hasilnya adalah himpunan kosong <strong>∅</strong>, yang membuktikan hukum:
+[
+A \cap A^c = \emptyset
+]</p>
+</section>
+</section>
+<section id="id2">
+<h2>Kesimpulan:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Komplemen dari gabungan himpunan dan komplemennya</strong> akan selalu menghasilkan himpunan semesta.</p></li>
+<li><p><strong>Komplemen dari irisan himpunan dan komplemennya</strong> akan selalu menghasilkan himpunan kosong.</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="algoritma">
+<h1>Algoritma<a class="headerlink" href="#algoritma" title="Link to this heading">#</a></h1>
+<section id="definisi-algoritma">
+<h2>Definisi Algoritma<a class="headerlink" href="#definisi-algoritma" title="Link to this heading">#</a></h2>
+<p>Algoritma adalah urutan dari sejumlah langkah logis dan sistematis untuk memecahkan suatu masalah tertentu.</p>
+<p>Pada pemrograman, algoritma didefinisikan sebagai metode yang terdiri dari langkah-langkah terstuktur untuk mencari solusi suatu masalah dengan bantuan komputer.</p>
+</section>
+<section id="algorithm-sequential-search">
+<h2>Algorithm Sequential Search<a class="headerlink" href="#algorithm-sequential-search" title="Link to this heading">#</a></h2>
+<p>Sequential search adalah teknik pencarian data yang dilakukan dengan cara membandingkan setiap elemen data satu per satu, mulai dari elemen pertama hingga elemen yang dicari ditemukan. Proses ini terus berlanjut hingga data ditemukan atau seluruh elemen telah diperiksa.</p>
+<p>Algoritma ini termasuk salah satu algoritma pencarian yang paling sederhana dan sering digunakan dalam situasi di mana data tidak memiliki struktur tertentu.</p>
+<p>contoh:</p>
+<ol class="arabic simple">
+<li><p>Masukkan kata kunci</p></li>
+<li><p>Mulai dari awal atau akhir, cek seluruh record dalam array atau list</p></li>
+<li><p>Baca satu persatu berdasarkan key yang dicari</p></li>
+<li><p>Jika sampai akhir pengulangan data tidak ada yang sama, maka data tidak ditemukan</p></li>
+</ol>
+</section>
+<section id="algoritma-binary-search">
+<h2>Algoritma Binary Search<a class="headerlink" href="#algoritma-binary-search" title="Link to this heading">#</a></h2>
+<p>Sebuah algoritme pencarian biner (atau pemilahan biner) adalah sebuah teknik untuk menemukan nilai tertentu dalam sebuah larik (array) linear, dengan menghilangkan setengah data pada setiap langkah, dipakai secara luas tetapi tidak secara ekslusif dalam ilmu komputer. Sebuah pencarian biner mencari nilai tengah (median), melakukan sebuah pembandingan untuk menentukan apakah nilai yang dicari ada sebelum atau sesudahnya, kemudian mencari setengah sisanya dengan cara yang sama.</p>
+<p>contoh:</p>
+<ol class="arabic simple">
+<li><p>Tetapkan penunjuk awal dengan 0, dan penunjuk akhir dengan indeks terakhir dari array</p></li>
+<li><p>Tetapkan variabel mid, yang merujuk ke tengah array</p></li>
+<li><p>Variabel ini dihitung sebagai (rendah+tinggi)/2</p></li>
+<li><p>Jika elemen pada indeks tengah sama dengan elemen yang dicari, kembalikan indeks tengah</p></li>
+</ol>
+</section>
+<section id="pseudocode">
+<h2>Pseudocode<a class="headerlink" href="#pseudocode" title="Link to this heading">#</a></h2>
+<p>Pseudocode adalah cara penulisan kode dan algoritma menggunakan bahasa umum yang digunakan sehari-hari sehingga lebih mudah dipahami. Karena itu pseudocode juga disebut sebagai false code atau representation code.</p>
+</section>
+<section id="big-o-algoritma">
+<h2>Big O algoritma<a class="headerlink" href="#big-o-algoritma" title="Link to this heading">#</a></h2>
+<p>Big-O adalah cara untuk mengekspresikan kompleksitas waktu (atau ruang) suatu algoritma.</p>
+</section>
+<section id="hitung-big-o-dari-algorithm-sequential-search">
+<h2>Hitung Big O dari Algorithm Sequential Search<a class="headerlink" href="#hitung-big-o-dari-algorithm-sequential-search" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Waktu kompleksitas ( time complexity)
+Time complexity adalah ukuran seberapa lama waktu yang dibutuhkan suatu algoritma untuk berjalan, berdasarkan ukuran input. Hal ini dinyatakan menggunakan notasi Big-O, yang memberikan perkiraan kasar waktu berjalan. Suatu algoritma dengan kompleksitas waktu yang lebih rendah umumnya akan lebih cepat daripada suatu algoritma dengan kompleksitas waktu yang lebih tinggi.</p></li>
+<li><p>Ruang kompleksitas ( space komplexity)
+Space komplexity adalah ukuran seberapa banyak memori yang dibutuhkan suatu algoritma, berdasarkan ukuran input. Seperti kompleksitas waktu, kompleksitas ruang dinyatakan menggunakan notasi Big-O. Algoritma dengan kompleksitas ruang yang lebih rendah umumnya akan membutuhkan lebih sedikit memori daripada algoritma dengan kompleksitas ruang yang lebih tinggi.</p></li>
+</ul>
+</section>
+<section id="reference">
+<h2>reference<a class="headerlink" href="#reference" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://binus.ac.id/malang/2017/09/pengenalan-algoritma/">https://binus.ac.id/malang/2017/09/pengenalan-algoritma/</a></p></li>
+<li><p><a class="reference external" href="https://fikti.umsu.ac.id/algoritma-sequential-search-pengertian-fungsi-dan-cara-kerjanya/">https://fikti.umsu.ac.id/algoritma-sequential-search-pengertian-fungsi-dan-cara-kerjanya/</a></p></li>
+<li><p><a class="reference external" href="https://id.wikipedia.org/wiki/Algoritma_pencarian_biner">https://id.wikipedia.org/wiki/Algoritma_pencarian_biner</a></p></li>
+<li><p><a class="reference external" href="https://revou.co/kosakata/pseudocode">https://revou.co/kosakata/pseudocode</a></p></li>
+<li><p><a class="reference external" href="https://www.designgurus.io/blog/big-o-algorithm-complexity">https://www.designgurus.io/blog/big-o-algorithm-complexity</a></p></li>
+</ol>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -414,30 +787,75 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="intro.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="notebooks.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Content with notebooks</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. Hukum De Morgan dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-pembuktian-hukum-de-morgan">Contoh Soal: Pembuktian Hukum De Morgan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-hukum-1-a-cap-b-c-a-c-cup-b-c">Membuktikan Hukum 1: ((A \cap B)^c = A^c \cup B^c)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-hukum-2-a-cup-b-c-a-c-cap-b-c">Membuktikan Hukum 2: ((A \cup B)^c = A^c \cap B^c)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#absorption-laws-dalam-teori-himpunan">2. Absorption Laws dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi-untuk-gabungan-union">1. <strong>Hukum Absorpsi untuk Gabungan (Union)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi-untuk-irisan-intersection">2. <strong>Hukum Absorpsi untuk Irisan (Intersection)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-dan-pembuktian">Contoh Soal dan Pembuktian</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1-hukum-absorpsi-untuk-gabungan-union">Contoh 1: Hukum Absorpsi untuk Gabungan (Union)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah">Langkah-langkah:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2-hukum-absorpsi-untuk-irisan-intersection">Contoh 2: Hukum Absorpsi untuk Irisan (Intersection)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Langkah-langkah:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-intuitif">Penjelasan Intuitif</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-laws-dalam-teori-himpunan">Complement Laws dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplemen-dari-himpunan-semesta-universal-set-adalah-himpunan-kosong">1. <strong>Komplemen dari Himpunan Semesta (Universal Set) adalah Himpunan Kosong</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplemen-dari-himpunan-itu-sendiri-adalah-himpunan-kosong">2. <strong>Komplemen dari Himpunan itu Sendiri adalah Himpunan Kosong</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-dengan-contoh-soal">Bukti dengan Contoh Soal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#misalkan">Misalkan:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1-komplemen-dari-gabungan-union">Contoh 1: <strong>Komplemen dari Gabungan (Union)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2-komplemen-dari-irisan-intersection">Contoh 2: <strong>Komplemen dari Irisan (Intersection)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Kesimpulan:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma">Algoritma</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-algoritma">Definisi Algoritma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithm-sequential-search">Algorithm Sequential Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-binary-search">Algoritma Binary Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode">Pseudocode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#big-o-algoritma">Big O algoritma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-big-o-dari-algorithm-sequential-search">Hitung Big O dari Algorithm Sequential Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">reference</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>

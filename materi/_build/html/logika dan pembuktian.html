@@ -1,0 +1,1169 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>logika matematika &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'logika dan pembuktian';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">logika matematika</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flogika dan pembuktian.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/logika dan pembuktian.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>logika matematika</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">logika matematika</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#negasi">Negasi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simbol-negasi">Simbol Negasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-kasus">Contoh Kasus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kebenaran-negasi">Tabel Kebenaran Negasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negasi-dalam-kehidupan-sehari-hari">Negasi dalam Kehidupan Sehari-hari</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negasi-dalam-pemrograman">Negasi dalam Pemrograman</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sumber-referensi">Sumber Referensi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konjungsi">Konjungsi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kebenaran-konjungsi">Tabel Kebenaran Konjungsi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-konjungsi">Contoh Konjungsi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-menggunakan-tabel-kebenaran">Pembuktian Menggunakan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-tabel-kebenaran">Penjelasan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#referensi">Referensi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disjungsi">Disjungsi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kebenaran-disjungsi">Tabel Kebenaran Disjungsi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-disjungsi">Contoh Disjungsi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Pembuktian Menggunakan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Penjelasan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Kesimpulan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Referensi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implikasi">Implikasi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kebenaran-implikasi">Tabel Kebenaran Implikasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-implikasi">Contoh Implikasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Pembuktian Menggunakan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Penjelasan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Kesimpulan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Referensi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bimplikasi">Bimplikasi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kebenaran-bimplikasi">Tabel Kebenaran Bimplikasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-bimplikasi">Contoh Bimplikasi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Pembuktian Menggunakan Tabel Kebenaran</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Penjelasan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Kesimpulan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Referensi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buatlah-tabel-kebenaran-untuk-pernyataan-berikut-p-lor-r-to-q">Buatlah tabel kebenaran untuk~pernyataan berikut $<span class="math notranslate nohighlight">\(P\lor(R\to\ Q)\)</span>$</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="logika-matematika">
+<h1>logika matematika<a class="headerlink" href="#logika-matematika" title="Link to this heading">#</a></h1>
+<section id="negasi">
+<h2>Negasi<a class="headerlink" href="#negasi" title="Link to this heading">#</a></h2>
+<p><strong>Negasi</strong> adalah salah satu operator logika dasar yang digunakan untuk membalikkan nilai kebenaran suatu pernyataan atau proposisi. Operator ini sering digunakan dalam berbagai bidang, seperti matematika, ilmu komputer, dan filsafat. Dalam konteks logika, negasi mengambil satu proposisi dan mengubah nilai kebenarannya menjadi kebalikan dari apa yang dinyatakan.</p>
+<p>Secara formal, jika proposisi <strong>P</strong> adalah benar (<strong>True</strong>), maka negasi dari proposisi tersebut, yang dilambangkan sebagai <strong><span class="math notranslate nohighlight">\(\neg P\)</span></strong> atau <strong>!P</strong>, adalah salah (<strong>False</strong>). Sebaliknya, jika proposisi <strong>P</strong> adalah salah (<strong>False</strong>), maka <strong><span class="math notranslate nohighlight">\(\neg P\)</span></strong> adalah benar (<strong>True</strong>).</p>
+<section id="simbol-negasi">
+<h3>Simbol Negasi<a class="headerlink" href="#simbol-negasi" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Dalam matematika dan logika formal, negasi dituliskan sebagai <span class="math notranslate nohighlight">\(\neg P\)</span>.</p></li>
+<li><p>Dalam ilmu komputer atau pemrograman, negasi sering dinyatakan dengan simbol <strong>!P</strong>.</p></li>
+</ul>
+</section>
+<section id="contoh-kasus">
+<h3>Contoh Kasus<a class="headerlink" href="#contoh-kasus" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Jika proposisi <strong>P</strong> adalah: “Angka 5 lebih besar dari 3” (<strong>P: 5 &gt; 3</strong>).</p>
+<ul class="simple">
+<li><p>Proposisi ini bernilai <strong>True</strong> (benar).</p></li>
+<li><p>Maka negasi dari <strong>P</strong> (<span class="math notranslate nohighlight">\(\neg P\)</span> atau !P) adalah: “Angka 5 tidak lebih besar dari 3”.</p></li>
+<li><p>Karena <strong>P</strong> benar, maka <span class="math notranslate nohighlight">\(\neg P\)</span> adalah <strong>False</strong> (salah).</p></li>
+</ul>
+</li>
+<li><p>Jika proposisi <strong>P</strong> adalah: “Matahari terbit dari barat” (<strong>P: Matahari terbit dari barat</strong>).</p>
+<ul class="simple">
+<li><p>Proposisi ini bernilai <strong>False</strong> (salah).</p></li>
+<li><p>Maka negasi dari <strong>P</strong> (<span class="math notranslate nohighlight">\(\neg P\)</span> atau !P) adalah: “Matahari tidak terbit dari barat”.</p></li>
+<li><p>Karena <strong>P</strong> salah, maka <strong>¬P</strong> adalah <strong>True</strong> (benar).</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="tabel-kebenaran-negasi">
+<h3>Tabel Kebenaran Negasi<a class="headerlink" href="#tabel-kebenaran-negasi" title="Link to this heading">#</a></h3>
+<p>Negasi hanya bekerja pada satu proposisi dan hasilnya adalah kebalikan dari nilai asli proposisi tersebut. Untuk menjelaskan lebih jelas, kita dapat menggunakan tabel kebenaran negasi berikut:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>P</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\neg P\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Interpretasi Tabel Kebenaran</strong>:</p>
+<ul class="simple">
+<li><p>Jika proposisi <strong>P</strong> bernilai <strong>True</strong> (benar), maka negasinya (<span class="math notranslate nohighlight">\(\neg P\)</span>) bernilai <strong>False</strong> (salah).</p></li>
+<li><p>Jika proposisi <strong>P</strong> bernilai <strong>False</strong> (salah), maka negasinya (<span class="math notranslate nohighlight">\(\neg P\)</span>) bernilai <strong>True</strong> (benar).</p></li>
+<li></li>
+</ul>
+</section>
+<section id="negasi-dalam-kehidupan-sehari-hari">
+<h3>Negasi dalam Kehidupan Sehari-hari<a class="headerlink" href="#negasi-dalam-kehidupan-sehari-hari" title="Link to this heading">#</a></h3>
+<p>Negasi digunakan untuk membuat pernyataan yang bertentangan dengan kondisi atau fakta yang ada. Contoh dalam kehidupan sehari-hari:</p>
+<ol class="arabic simple">
+<li><p><strong>Pernyataan Positif:</strong></p>
+<ul class="simple">
+<li><p>Proposisi: “Hari ini cerah.”</p></li>
+<li><p>Negasi: “Hari ini tidak cerah.”</p></li>
+</ul>
+</li>
+<li><p><strong>Pernyataan Negatif:</strong></p>
+<ul class="simple">
+<li><p>Proposisi: “Dia tidak sakit.”</p></li>
+<li><p>Negasi: “Dia sakit.”</p></li>
+</ul>
+</li>
+</ol>
+<p>Contoh di atas, negasi membalikkan arti dari pernyataan awal. Jika pernyataan aslinya benar, negasi menjadi salah, dan sebaliknya.</p>
+</section>
+<section id="negasi-dalam-pemrograman">
+<h3>Negasi dalam Pemrograman<a class="headerlink" href="#negasi-dalam-pemrograman" title="Link to this heading">#</a></h3>
+<p>Di pemrograman, operator negasi sering digunakan untuk mengubah kondisi atau mengevaluasi logika dalam pengambilan keputusan. Misalnya, dalam bahasa pemrograman seperti Python atau JavaScript, operator negasi dilambangkan dengan tanda seru (<strong>!</strong>).</p>
+</section>
+<section id="sumber-referensi">
+<h3>Sumber Referensi<a class="headerlink" href="#sumber-referensi" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Copi, I. M., Cohen, C., &amp; McMahon, K. (2014). Introduction to Logic. Pearson.</p></li>
+<li><p>Hurley, P. J. (2010). A Concise Introduction to Logic. Cengage Learning.</p></li>
+<li><p>Bradley, R., &amp; Swartz, N. (1979). Possible Worlds: An Introduction to Logic and Its Philosophy. Hackett Publishing Company.</p></li>
+</ul>
+</section>
+</section>
+<section id="konjungsi">
+<h2>Konjungsi<a class="headerlink" href="#konjungsi" title="Link to this heading">#</a></h2>
+<p>Konjungsi adalah salah satu operator logika yang menghubungkan dua proposisi. Dalam notasi logika, konjungsi antara dua proposisi ( p ) dan ( q ) ditulis sebagai <span class="math notranslate nohighlight">\(( p \land q )\)</span>. Konjungsi hanya menghasilkan nilai benar jika kedua proposisi tersebut benar. Jika salah satu atau kedua proposisi tersebut salah, maka hasil konjungsi adalah salah.</p>
+<section id="tabel-kebenaran-konjungsi">
+<h3>Tabel Kebenaran Konjungsi<a class="headerlink" href="#tabel-kebenaran-konjungsi" title="Link to this heading">#</a></h3>
+<p>Untuk lebih memahami konjungsi, kita dapat melihat tabel kebenaran berikut:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>(p)</p></th>
+<th class="head"><p>(q)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((p \wedge q)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Dalam tabel tersebut:</p>
+<ul class="simple">
+<li><p>Baris pertama menunjukkan bahwa jika ( p ) dan ( q ) keduanya benar, maka <span class="math notranslate nohighlight">\(( p \land q )\)</span> juga benar.</p></li>
+<li><p>Baris kedua menunjukkan bahwa jika ( p ) benar dan ( q ) salah, maka <span class="math notranslate nohighlight">\(( p \land q )\)</span> salah.</p></li>
+<li><p>Baris ketiga menunjukkan bahwa jika ( p ) salah dan ( q ) benar, maka <span class="math notranslate nohighlight">\(( p \land q )\)</span> salah.</p></li>
+<li><p>Baris keempat menunjukkan bahwa jika kedua proposisi salah, maka <span class="math notranslate nohighlight">\(( p \land q )\)</span> juga salah.</p></li>
+</ul>
+</section>
+<section id="contoh-konjungsi">
+<h3>Contoh Konjungsi<a class="headerlink" href="#contoh-konjungsi" title="Link to this heading">#</a></h3>
+<p>Mari kita lihat contoh proposisi dalam kehidupan sehari-hari:</p>
+<p>Misalkan ( p ): “Hari ini hujan.”<br />
+Misalkan ( q ): “Saya membawa payung.”</p>
+<p>Konjungsi <span class="math notranslate nohighlight">\(( p \land q )\)</span> berarti “Hari ini hujan dan saya membawa payung.” Konjungsi ini hanya akan benar jika kedua pernyataan tersebut benar, yaitu jika hari ini benar-benar hujan dan Anda memang membawa payung. Dalam situasi lain, seperti jika hari ini tidak hujan, atau jika Anda tidak membawa payung, maka konjungsi tersebut akan menjadi salah.</p>
+</section>
+<section id="pembuktian-menggunakan-tabel-kebenaran">
+<h3>Pembuktian Menggunakan Tabel Kebenaran<a class="headerlink" href="#pembuktian-menggunakan-tabel-kebenaran" title="Link to this heading">#</a></h3>
+<p>Kita dapat membuktikan suatu proposisi logika menggunakan tabel kebenaran. Misalkan kita ingin membuktikan bahwa:</p>
+<p><span class="math notranslate nohighlight">\([ p \land q \implies q ]\)</span></p>
+<p>Artinya, jika <span class="math notranslate nohighlight">\(( p \land q )\)</span> benar, maka ( q ) juga harus benar. Untuk membuktikannya, kita dapat membuat tabel kebenaran berikut:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>(p)</p></th>
+<th class="head"><p>(q)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((p \land q)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((p \land q \implies q)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="penjelasan-tabel-kebenaran">
+<h3>Penjelasan Tabel Kebenaran<a class="headerlink" href="#penjelasan-tabel-kebenaran" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Pada baris pertama, jika ( p ) dan ( q ) keduanya benar, maka <span class="math notranslate nohighlight">\(( p \land q )\)</span> juga benar, sehingga <span class="math notranslate nohighlight">\(( p \land q \implies q )\)</span> adalah benar.</p></li>
+<li><p>Pada baris kedua, meskipun ( p ) benar dan ( q ) salah, <span class="math notranslate nohighlight">\(( p \land q )\)</span> salah, jadi implikasi selalu dianggap benar.</p></li>
+<li><p>Pada baris ketiga, meskipun ( p ) salah, ( q ) benar, tetapi <span class="math notranslate nohighlight">\(( p \land q )\)</span> juga salah, sehingga implikasi tetap benar.</p></li>
+<li><p>Pada baris keempat, jika kedua proposisi salah, maka <span class="math notranslate nohighlight">\(( p \land q )\)</span> juga salah, dan implikasi tetap benar.</p></li>
+</ul>
+<p>Dari tabel di atas, kita dapat melihat bahwa pernyataan <span class="math notranslate nohighlight">\(( p \land q \implies q )\)</span> selalu bernilai benar, sehingga kita dapat menyimpulkan bahwa pernyataan tersebut valid.</p>
+</section>
+<section id="kesimpulan">
+<h3>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h3>
+<p>Konjungsi adalah operator logika yang penting dalam matematika dan logika formal. Dengan memahami konsep dan pembuktian konjungsi, kita dapat melakukan analisis yang lebih mendalam terhadap pernyataan logis dan membangun argumen yang lebih kuat dalam berbagai konteks, baik dalam matematika maupun dalam kehidupan sehari-hari.</p>
+</section>
+<section id="referensi">
+<h3>Referensi<a class="headerlink" href="#referensi" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Mendelson, Elliott. <em>Mathematical Logic</em>. 7th Edition. Chapman and Hall/CRC, 2015.</p></li>
+<li><p>Enderton, Herbert B. <em>A Mathematical Introduction to Logic</em>. Academic Press, 2001.</p></li>
+<li><p>Rosen, Kenneth H. <em>Discrete Mathematics and Its Applications</em>. 7th Edition. McGraw-Hill, 2011.</p></li>
+</ol>
+</section>
+</section>
+<section id="disjungsi">
+<h2>Disjungsi<a class="headerlink" href="#disjungsi" title="Link to this heading">#</a></h2>
+<p>Disjungsi adalah salah satu operator logika yang menghubungkan dua proposisi. Dalam notasi logika, disjungsi antara dua proposisi ( p ) dan ( q ) ditulis sebagai <span class="math notranslate nohighlight">\(( p \lor q )\)</span>. Disjungsi menghasilkan nilai benar jika paling tidak salah satu dari kedua proposisi tersebut benar. Disjungsi hanya menghasilkan nilai salah jika kedua proposisi tersebut salah.</p>
+<section id="tabel-kebenaran-disjungsi">
+<h3>Tabel Kebenaran Disjungsi<a class="headerlink" href="#tabel-kebenaran-disjungsi" title="Link to this heading">#</a></h3>
+<p>Untuk lebih memahami disjungsi, kita dapat melihat tabel kebenaran berikut:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>(p)</p></th>
+<th class="head"><p>(q)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((p \lor q)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Dalam tabel tersebut:</p>
+<ul class="simple">
+<li><p>Baris pertama menunjukkan bahwa jika ( p ) dan ( q ) keduanya benar, maka <span class="math notranslate nohighlight">\(( p \lor q )\)</span> juga benar.</p></li>
+<li><p>Baris kedua menunjukkan bahwa jika ( p ) benar dan ( q ) salah, maka <span class="math notranslate nohighlight">\(( p \lor q )\)</span> benar.</p></li>
+<li><p>Baris ketiga menunjukkan bahwa jika ( p ) salah dan ( q ) benar, maka <span class="math notranslate nohighlight">\(( p \lor q )\)</span> benar.</p></li>
+<li><p>Baris keempat menunjukkan bahwa jika kedua proposisi salah, maka <span class="math notranslate nohighlight">\(( p \lor q )\)</span> juga salah.</p></li>
+</ul>
+</section>
+<section id="contoh-disjungsi">
+<h3>Contoh Disjungsi<a class="headerlink" href="#contoh-disjungsi" title="Link to this heading">#</a></h3>
+<p>Mari kita lihat contoh proposisi dalam kehidupan sehari-hari:</p>
+<p>Misalkan ( p ): “Hari ini hujan.”<br />
+Misalkan ( q ): “Saya akan pergi berlibur.”</p>
+<p>Disjungsi <span class="math notranslate nohighlight">\(( p \lor q )\)</span> berarti “Hari ini hujan atau saya akan pergi berlibur.” Disjungsi ini akan bernilai benar jika salah satu atau kedua pernyataan tersebut benar. Jadi, jika hari ini hujan atau Anda pergi berlibur, maka pernyataan tersebut benar. Disjungsi ini hanya akan menjadi salah jika kedua pernyataan tersebut salah.</p>
+</section>
+<section id="id1">
+<h3>Pembuktian Menggunakan Tabel Kebenaran<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Kita dapat membuktikan suatu proposisi logika menggunakan tabel kebenaran. Misalkan kita ingin membuktikan bahwa:</p>
+<p><span class="math notranslate nohighlight">\([ p \lor q \implies p ]\)</span></p>
+<p>Artinya, jika <span class="math notranslate nohighlight">\(( p \lor q )\)</span> benar, maka ( p ) juga harus benar. Untuk membuktikannya, kita dapat membuat tabel kebenaran berikut:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>(p)</p></th>
+<th class="head"><p>(q)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((p \lor q)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((p \lor q \implies p)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id2">
+<h3>Penjelasan Tabel Kebenaran<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Pada baris pertama, jika ( p ) dan ( q ) keduanya benar, maka <span class="math notranslate nohighlight">\(( p \lor q )\)</span> juga benar, dan <span class="math notranslate nohighlight">\(( p \lor q \implies p )\)</span> adalah benar.</p></li>
+<li><p>Pada baris kedua, jika ( p ) benar dan ( q ) salah, maka <span class="math notranslate nohighlight">\(( p \lor q )\)</span> benar, dan <span class="math notranslate nohighlight">\(( p \lor q \implies p )\)</span> juga benar.</p></li>
+<li><p>Pada baris ketiga, meskipun ( p ) salah, ( q ) benar, tetapi <span class="math notranslate nohighlight">\(( p \lor q )\)</span> benar, sehingga <span class="math notranslate nohighlight">\(( p \lor q \implies p )\)</span> salah.</p></li>
+<li><p>Pada baris keempat, jika kedua proposisi salah, maka <span class="math notranslate nohighlight">\(( p \lor q )\)</span> juga salah, dan implikasi selalu dianggap benar.</p></li>
+</ul>
+<p>Dari tabel di atas, kita dapat melihat bahwa pernyataan <span class="math notranslate nohighlight">\(( p \lor q \implies p )\)</span> tidak selalu bernilai benar, sehingga kita tidak dapat menyimpulkan bahwa pernyataan tersebut valid.</p>
+</section>
+<section id="id3">
+<h3>Kesimpulan<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Disjungsi adalah operator logika yang penting dalam matematika dan logika formal. Dengan memahami konsep dan pembuktian disjungsi, kita dapat melakukan analisis yang lebih mendalam terhadap pernyataan logis dan membangun argumen yang lebih kuat dalam berbagai konteks, baik dalam matematika maupun dalam kehidupan sehari-hari.</p>
+</section>
+<section id="id4">
+<h3>Referensi<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Mendelson, Elliott. <em>Mathematical Logic</em>. 7th Edition. Chapman and Hall/CRC, 2015.</p></li>
+<li><p>Enderton, Herbert B. <em>A Mathematical Introduction to Logic</em>. Academic Press, 2001.</p></li>
+<li><p>Rosen, Kenneth H. <em>Discrete Mathematics and Its Applications</em>. 7th Edition. McGraw-Hill, 2011.</p></li>
+</ol>
+</section>
+</section>
+<section id="implikasi">
+<h2>Implikasi<a class="headerlink" href="#implikasi" title="Link to this heading">#</a></h2>
+<p>Implikasi adalah salah satu operator logika yang menghubungkan dua proposisi, biasanya dinyatakan dalam bentuk “Jika ( p ), maka ( q )”. Dalam notasi logika, implikasi antara dua proposisi ( p ) dan ( q ) ditulis sebagai <span class="math notranslate nohighlight">\(( p \implies q )\)</span>. Implikasi hanya menghasilkan nilai salah jika proposisi ( p ) benar dan proposisi ( q ) salah. Dalam semua kondisi lainnya, implikasi dianggap benar.</p>
+<section id="tabel-kebenaran-implikasi">
+<h3>Tabel Kebenaran Implikasi<a class="headerlink" href="#tabel-kebenaran-implikasi" title="Link to this heading">#</a></h3>
+<p>Untuk lebih memahami implikasi, kita dapat melihat tabel kebenaran berikut:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>(p)</p></th>
+<th class="head"><p>(q)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((p \implies q)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Dalam tabel tersebut:</p>
+<ul class="simple">
+<li><p>Baris pertama menunjukkan bahwa jika ( p ) dan ( q ) keduanya benar, maka <span class="math notranslate nohighlight">\(( p \implies q )\)</span> juga benar.</p></li>
+<li><p>Baris kedua menunjukkan bahwa jika ( p ) benar dan ( q ) salah, maka <span class="math notranslate nohighlight">\(( p \implies q )\)</span> salah.</p></li>
+<li><p>Baris ketiga menunjukkan bahwa jika ( p ) salah dan ( q ) benar, maka <span class="math notranslate nohighlight">\(( p \implies q \)\)</span> benar.</p></li>
+<li><p>Baris keempat menunjukkan bahwa jika kedua proposisi salah, maka <span class="math notranslate nohighlight">\(( p \implies q )\)</span> juga benar.</p></li>
+</ul>
+</section>
+<section id="contoh-implikasi">
+<h3>Contoh Implikasi<a class="headerlink" href="#contoh-implikasi" title="Link to this heading">#</a></h3>
+<p>Mari kita lihat contoh proposisi dalam kehidupan sehari-hari:</p>
+<p>Misalkan ( p ): “Jika hari ini hujan.”<br />
+Misalkan ( q ): “Maka saya membawa payung.”</p>
+<p>Implikasi <span class="math notranslate nohighlight">\(( p \implies q )\)</span> berarti “Jika hari ini hujan, maka saya membawa payung.” Implikasi ini hanya akan salah jika hari ini hujan tetapi Anda tidak membawa payung. Dalam situasi lainnya, implikasi ini dianggap benar.</p>
+</section>
+<section id="id5">
+<h3>Pembuktian Menggunakan Tabel Kebenaran<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Kita dapat membuktikan suatu proposisi logika menggunakan tabel kebenaran. Misalkan kita ingin membuktikan bahwa:</p>
+<div class="math notranslate nohighlight">
+\[ p \implies (q \lor p) \]</div>
+<p>Artinya, jika ( p ) benar, maka ( q \lor p ) juga harus benar. Untuk membuktikannya, kita dapat membuat tabel kebenaran berikut:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>(p)</p></th>
+<th class="head"><p>(q)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((q \lor p)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((p \implies (q \lor p))\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id6">
+<h3>Penjelasan Tabel Kebenaran<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Pada baris pertama, jika ( p ) dan ( q ) keduanya benar, maka <span class="math notranslate nohighlight">\(( q \lor p )\)</span> juga benar, sehingga <span class="math notranslate nohighlight">\(( p \implies (q \lor p) )\)</span> adalah benar.</p></li>
+<li><p>Pada baris kedua, jika ( p ) benar dan ( q ) salah, maka <span class="math notranslate nohighlight">\(( q \lor p )\)</span> tetap benar, sehingga implikasi juga benar.</p></li>
+<li><p>Pada baris ketiga, meskipun ( p ) salah, ( q ) benar, sehingga <span class="math notranslate nohighlight">\(( q \lor p )\)</span> benar, dan implikasi tetap benar.</p></li>
+<li><p>Pada baris keempat, jika kedua proposisi salah, maka ( p ) juga salah, dan implikasi tetap benar.</p></li>
+</ul>
+<p>Dari tabel di atas, kita dapat melihat bahwa pernyataan <span class="math notranslate nohighlight">\(( p \implies (q \lor p))\)</span> selalu bernilai benar, sehingga kita dapat menyimpulkan bahwa pernyataan tersebut valid.</p>
+</section>
+<section id="id7">
+<h3>Kesimpulan<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>Implikasi adalah operator logika yang penting dalam matematika dan logika formal. Dengan memahami konsep dan pembuktian implikasi, kita dapat melakukan analisis yang lebih mendalam terhadap pernyataan logis dan membangun argumen yang lebih kuat dalam berbagai konteks, baik dalam matematika maupun dalam kehidupan sehari-hari.</p>
+</section>
+<section id="id8">
+<h3>Referensi<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Mendelson, Elliott. <em>Mathematical Logic</em>. 7th Edition. Chapman and Hall/CRC, 2015.</p></li>
+<li><p>Enderton, Herbert B. <em>A Mathematical Introduction to Logic</em>. Academic Press, 2001.</p></li>
+<li><p>Rosen, Kenneth H. <em>Discrete Mathematics and Its Applications</em>. 7th Edition. McGraw-Hill, 2011.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id9">
+<h1><a class="headerlink" href="#id9" title="Link to this heading">#</a></h1>
+<section id="bimplikasi">
+<h2>Bimplikasi<a class="headerlink" href="#bimplikasi" title="Link to this heading">#</a></h2>
+<p>Bimplikasi adalah operator logika yang menghubungkan dua proposisi dan menghasilkan nilai benar jika kedua proposisi memiliki nilai yang sama, baik keduanya benar atau keduanya salah. Dalam notasi logika, bimplikasi antara dua proposisi ( p ) dan ( q ) ditulis sebagai <span class="math notranslate nohighlight">\(( p \iff q )\)</span> atau <span class="math notranslate nohighlight">\(( p \Leftrightarrow q )\)</span>.</p>
+<section id="tabel-kebenaran-bimplikasi">
+<h3>Tabel Kebenaran Bimplikasi<a class="headerlink" href="#tabel-kebenaran-bimplikasi" title="Link to this heading">#</a></h3>
+<p>Untuk lebih memahami bimplikasi, kita dapat melihat tabel kebenaran berikut:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>(p)</p></th>
+<th class="head"><p>(q)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((p \iff q)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Dalam tabel tersebut:</p>
+<ul class="simple">
+<li><p>Baris pertama menunjukkan bahwa jika ( p ) dan ( q ) keduanya benar, maka <span class="math notranslate nohighlight">\(( p \iff q )\)</span> juga benar.</p></li>
+<li><p>Baris kedua menunjukkan bahwa jika ( p ) benar dan ( q ) salah, maka <span class="math notranslate nohighlight">\(( p \iff q )\)</span> salah.</p></li>
+<li><p>Baris ketiga menunjukkan bahwa jika ( p ) salah dan ( q ) benar, maka <span class="math notranslate nohighlight">\(( p \iff q )\)</span> salah.</p></li>
+<li><p>Baris keempat menunjukkan bahwa jika kedua proposisi salah, maka <span class="math notranslate nohighlight">\(( p \iff q )\)</span> juga benar.</p></li>
+</ul>
+</section>
+<section id="contoh-bimplikasi">
+<h3>Contoh Bimplikasi<a class="headerlink" href="#contoh-bimplikasi" title="Link to this heading">#</a></h3>
+<p>Mari kita lihat contoh proposisi dalam kehidupan sehari-hari:</p>
+<p>Misalkan ( p ): “Hari ini hujan.”<br />
+Misalkan ( q ): “Saya membawa payung.”</p>
+<p>Bimplikasi <span class="math notranslate nohighlight">\(( p \iff q )\)</span> berarti “Hari ini hujan jika dan hanya jika saya membawa payung.” Pernyataan ini akan benar jika kedua pernyataan tersebut memiliki nilai yang sama: jika hujan, maka Anda membawa payung, dan jika tidak hujan, maka Anda tidak membawa payung.</p>
+</section>
+</section>
+<section id="id10">
+<h2>Pembuktian Menggunakan Tabel Kebenaran<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<p>Kita dapat membuktikan suatu proposisi logika menggunakan tabel kebenaran. Misalkan kita ingin membuktikan bahwa:</p>
+<p><span class="math notranslate nohighlight">\([ p \iff q \implies (p \implies q) \land (q \implies p) ]\)</span></p>
+<p>Artinya, jika <span class="math notranslate nohighlight">\(( p \iff q )\)</span> benar, maka ( p ) mengimplikasikan ( q ) dan ( q ) mengimplikasikan ( p ). Untuk membuktikannya, kita dapat membuat tabel kebenaran berikut:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>(p)</p></th>
+<th class="head"><p>(q)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((p \iff q)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((p \implies q)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\((q \implies p)\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(((p \implies q) \land (q \implies p))\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="id11">
+<h3>Penjelasan Tabel Kebenaran<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Pada baris pertama, jika ( p ) dan ( q ) keduanya benar, maka <span class="math notranslate nohighlight">\(( p \iff q )\)</span> juga benar dan implikasi adalah benar.</p></li>
+<li><p>Pada baris kedua, jika ( p ) benar dan ( q ) salah, maka <span class="math notranslate nohighlight">\(( p \iff q )\)</span> salah, sehingga implikasi adalah salah.</p></li>
+<li><p>Pada baris ketiga, jika ( p ) salah dan ( q ) benar, maka <span class="math notranslate nohighlight">\(( p \iff q )\)</span> juga salah, sehingga implikasi adalah salah.</p></li>
+<li><p>Pada baris keempat, jika kedua proposisi salah, maka <span class="math notranslate nohighlight">\(( p \iff q )\)</span> benar dan implikasi adalah benar.</p></li>
+</ul>
+<p>Dari tabel di atas, kita dapat melihat bahwa pernyataan <span class="math notranslate nohighlight">\(( p \iff q \implies (p \implies q) \land (q \implies p) )\)</span> selalu bernilai benar, sehingga kita dapat menyimpulkan bahwa pernyataan tersebut valid.</p>
+</section>
+<section id="id12">
+<h3>Kesimpulan<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<p>Bimplikasi adalah operator logika yang penting dalam matematika dan logika formal. Dengan memahami konsep dan pembuktian bimplikasi, kita dapat melakukan analisis yang lebih mendalam terhadap pernyataan logis dan membangun argumen yang lebih kuat dalam berbagai konteks, baik dalam matematika maupun dalam kehidupan sehari-hari.</p>
+</section>
+<section id="id13">
+<h3>Referensi<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Mendelson, Elliott. <em>Mathematical Logic</em>. 7th Edition. Chapman and Hall/CRC, 2015.</p></li>
+<li><p>Enderton, Herbert B. <em>A Mathematical Introduction to Logic</em>. Academic Press, 2001.</p></li>
+<li><p>Rosen, Kenneth H. <em>Discrete Mathematics and Its Applications</em>. 7th Edition. McGraw-Hill, 2011.</p></li>
+</ol>
+</section>
+</section>
+<section id="buatlah-tabel-kebenaran-untuk-pernyataan-berikut-p-lor-r-to-q">
+<h2>Buatlah tabel kebenaran untuk~pernyataan berikut $<span class="math notranslate nohighlight">\(P\lor(R\to\ Q)\)</span>$<a class="headerlink" href="#buatlah-tabel-kebenaran-untuk-pernyataan-berikut-p-lor-r-to-q" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{c|c|c|c|cc}P&amp;Q&amp;R&amp;\ Q&amp;R\to\ Q&amp;P\lor(R\to\ Q)\\\hline\text{Т}&amp;\text{Т}&amp;\text{Т}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{Т}&amp;\text{Т}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{T}&amp;\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{T}\\\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{T}\\\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{F}\\\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{}\end{array}\end{split}\]</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="markdown-notebooks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">logika matematika</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#negasi">Negasi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simbol-negasi">Simbol Negasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-kasus">Contoh Kasus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kebenaran-negasi">Tabel Kebenaran Negasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negasi-dalam-kehidupan-sehari-hari">Negasi dalam Kehidupan Sehari-hari</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negasi-dalam-pemrograman">Negasi dalam Pemrograman</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sumber-referensi">Sumber Referensi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konjungsi">Konjungsi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kebenaran-konjungsi">Tabel Kebenaran Konjungsi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-konjungsi">Contoh Konjungsi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-menggunakan-tabel-kebenaran">Pembuktian Menggunakan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-tabel-kebenaran">Penjelasan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#referensi">Referensi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disjungsi">Disjungsi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kebenaran-disjungsi">Tabel Kebenaran Disjungsi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-disjungsi">Contoh Disjungsi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Pembuktian Menggunakan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Penjelasan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Kesimpulan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Referensi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implikasi">Implikasi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kebenaran-implikasi">Tabel Kebenaran Implikasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-implikasi">Contoh Implikasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Pembuktian Menggunakan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Penjelasan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Kesimpulan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Referensi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bimplikasi">Bimplikasi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kebenaran-bimplikasi">Tabel Kebenaran Bimplikasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-bimplikasi">Contoh Bimplikasi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Pembuktian Menggunakan Tabel Kebenaran</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Penjelasan Tabel Kebenaran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Kesimpulan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Referensi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buatlah-tabel-kebenaran-untuk-pernyataan-berikut-p-lor-r-to-q">Buatlah tabel kebenaran untuk~pernyataan berikut $<span class="math notranslate nohighlight">\(P\lor(R\to\ Q)\)</span>$</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

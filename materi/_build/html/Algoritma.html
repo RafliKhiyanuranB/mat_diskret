@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>Algoritma &#8212; My sample book</title>
   
   
   
@@ -57,7 +57,7 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Algoritma';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -254,7 +254,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAlgoritma.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -284,7 +284,7 @@
       
       
       
-      <li><a href="_sources/notebooks.ipynb" target="_blank"
+      <li><a href="_sources/Algoritma.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -294,7 +294,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -368,7 +368,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Algoritma</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -377,9 +377,15 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-algoritma">Definisi Algoritma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithm-sequential-search">Algorithm Sequential Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-binary-search">Algoritma Binary Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode">Pseudocode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#big-o-algoritma">Big O algoritma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-big-o-dari-algorithm-sequential-search">Hitung Big O dari Algorithm Sequential Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">reference</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -390,7 +396,65 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  
+  <section class="tex2jax_ignore mathjax_ignore" id="algoritma">
+<h1>Algoritma<a class="headerlink" href="#algoritma" title="Link to this heading">#</a></h1>
+<section id="definisi-algoritma">
+<h2>Definisi Algoritma<a class="headerlink" href="#definisi-algoritma" title="Link to this heading">#</a></h2>
+<p>Algoritma adalah urutan dari sejumlah langkah logis dan sistematis untuk memecahkan suatu masalah tertentu.</p>
+<p>Pada pemrograman, algoritma didefinisikan sebagai metode yang terdiri dari langkah-langkah terstuktur untuk mencari solusi suatu masalah dengan bantuan komputer.</p>
+</section>
+<section id="algorithm-sequential-search">
+<h2>Algorithm Sequential Search<a class="headerlink" href="#algorithm-sequential-search" title="Link to this heading">#</a></h2>
+<p>Sequential search adalah teknik pencarian data yang dilakukan dengan cara membandingkan setiap elemen data satu per satu, mulai dari elemen pertama hingga elemen yang dicari ditemukan. Proses ini terus berlanjut hingga data ditemukan atau seluruh elemen telah diperiksa.</p>
+<p>Algoritma ini termasuk salah satu algoritma pencarian yang paling sederhana dan sering digunakan dalam situasi di mana data tidak memiliki struktur tertentu.</p>
+<p>contoh:</p>
+<ol class="arabic simple">
+<li><p>Masukkan kata kunci</p></li>
+<li><p>Mulai dari awal atau akhir, cek seluruh record dalam array atau list</p></li>
+<li><p>Baca satu persatu berdasarkan key yang dicari</p></li>
+<li><p>Jika sampai akhir pengulangan data tidak ada yang sama, maka data tidak ditemukan</p></li>
+</ol>
+</section>
+<section id="algoritma-binary-search">
+<h2>Algoritma Binary Search<a class="headerlink" href="#algoritma-binary-search" title="Link to this heading">#</a></h2>
+<p>Sebuah algoritme pencarian biner (atau pemilahan biner) adalah sebuah teknik untuk menemukan nilai tertentu dalam sebuah larik (array) linear, dengan menghilangkan setengah data pada setiap langkah, dipakai secara luas tetapi tidak secara ekslusif dalam ilmu komputer. Sebuah pencarian biner mencari nilai tengah (median), melakukan sebuah pembandingan untuk menentukan apakah nilai yang dicari ada sebelum atau sesudahnya, kemudian mencari setengah sisanya dengan cara yang sama.</p>
+<p>contoh:</p>
+<ol class="arabic simple">
+<li><p>Tetapkan penunjuk awal dengan 0, dan penunjuk akhir dengan indeks terakhir dari array</p></li>
+<li><p>Tetapkan variabel mid, yang merujuk ke tengah array</p></li>
+<li><p>Variabel ini dihitung sebagai (rendah+tinggi)/2</p></li>
+<li><p>Jika elemen pada indeks tengah sama dengan elemen yang dicari, kembalikan indeks tengah</p></li>
+</ol>
+</section>
+<section id="pseudocode">
+<h2>Pseudocode<a class="headerlink" href="#pseudocode" title="Link to this heading">#</a></h2>
+<p>Pseudocode adalah cara penulisan kode dan algoritma menggunakan bahasa umum yang digunakan sehari-hari sehingga lebih mudah dipahami. Karena itu pseudocode juga disebut sebagai false code atau representation code.</p>
+</section>
+<section id="big-o-algoritma">
+<h2>Big O algoritma<a class="headerlink" href="#big-o-algoritma" title="Link to this heading">#</a></h2>
+<p>Big-O adalah cara untuk mengekspresikan kompleksitas waktu (atau ruang) suatu algoritma.</p>
+</section>
+<section id="hitung-big-o-dari-algorithm-sequential-search">
+<h2>Hitung Big O dari Algorithm Sequential Search<a class="headerlink" href="#hitung-big-o-dari-algorithm-sequential-search" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Waktu kompleksitas ( time complexity)
+Time complexity adalah ukuran seberapa lama waktu yang dibutuhkan suatu algoritma untuk berjalan, berdasarkan ukuran input. Hal ini dinyatakan menggunakan notasi Big-O, yang memberikan perkiraan kasar waktu berjalan. Suatu algoritma dengan kompleksitas waktu yang lebih rendah umumnya akan lebih cepat daripada suatu algoritma dengan kompleksitas waktu yang lebih tinggi.</p></li>
+<li><p>Ruang kompleksitas ( space komplexity)
+Space komplexity adalah ukuran seberapa banyak memori yang dibutuhkan suatu algoritma, berdasarkan ukuran input. Seperti kompleksitas waktu, kompleksitas ruang dinyatakan menggunakan notasi Big-O. Algoritma dengan kompleksitas ruang yang lebih rendah umumnya akan membutuhkan lebih sedikit memori daripada algoritma dengan kompleksitas ruang yang lebih tinggi.</p></li>
+</ul>
+</section>
+<section id="reference">
+<h2>reference<a class="headerlink" href="#reference" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://binus.ac.id/malang/2017/09/pengenalan-algoritma/">https://binus.ac.id/malang/2017/09/pengenalan-algoritma/</a></p></li>
+<li><p><a class="reference external" href="https://fikti.umsu.ac.id/algoritma-sequential-search-pengertian-fungsi-dan-cara-kerjanya/">https://fikti.umsu.ac.id/algoritma-sequential-search-pengertian-fungsi-dan-cara-kerjanya/</a></p></li>
+<li><p><a class="reference external" href="https://id.wikipedia.org/wiki/Algoritma_pencarian_biner">https://id.wikipedia.org/wiki/Algoritma_pencarian_biner</a></p></li>
+<li><p><a class="reference external" href="https://revou.co/kosakata/pseudocode">https://revou.co/kosakata/pseudocode</a></p></li>
+<li><p><a class="reference external" href="https://www.designgurus.io/blog/big-o-algorithm-complexity">https://www.designgurus.io/blog/big-o-algorithm-complexity</a></p></li>
+</ol>
+</section>
+</section>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -436,9 +500,15 @@ document.write(`
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-algoritma">Definisi Algoritma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithm-sequential-search">Algorithm Sequential Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-binary-search">Algoritma Binary Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode">Pseudocode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#big-o-algoritma">Big O algoritma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-big-o-dari-algorithm-sequential-search">Hitung Big O dari Algorithm Sequential Search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">reference</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>

@@ -5,5 +5,6 @@ format: jb-book
 root: intro
 chapters:
 - file: logika dan pembuktian
-- file: algoritma
-- file: markdown-notebooks
+- file: Algoritma
+- file: himpunan
+- file: aljabarbooleandangerbanglogika

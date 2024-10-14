@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. Hukum De Morgan dalam Teori Himpunan &#8212; My sample book</title>
+    <title>Hukum De Morgan dalam Teori Himpunan &#8212; My sample book</title>
   
   
   
@@ -152,8 +152,6 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
   
   
 </a></div>
@@ -174,7 +172,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Matdis
                 </a>
             </li>
         </ul>
@@ -182,7 +180,8 @@
 <li class="toctree-l1"><a class="reference internal" href="logika%20dan%20pembuktian.html">logika matematika</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Hukum De Morgan dalam Teori Himpunan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="himpunan.html"> Himpunan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aljabarbooleandangerbanglogika.html">Aljabar Boolean &amp; Gerbang Logika</a></li>
 
 
 
@@ -373,7 +372,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>1. Hukum De Morgan dalam Teori Himpunan</h1>
+    <h1>Hukum De Morgan dalam Teori Himpunan</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -383,17 +382,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. Hukum De Morgan dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Hukum De Morgan dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-pembuktian-hukum-de-morgan">Contoh Soal: Pembuktian Hukum De Morgan</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-hukum-1-a-cap-b-c-a-c-cup-b-c">Membuktikan Hukum 1: ((A \cap B)^c = A^c \cup B^c)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-hukum-2-a-cup-b-c-a-c-cap-b-c">Membuktikan Hukum 2: ((A \cup B)^c = A^c \cap B^c)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-hukum-1-a-cap-b-c-a-c-cup-b-c">Membuktikan Hukum 1: ((A ∩ B)^c = A^c ∪ B^c)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-hukum-2-a-cup-b-c-a-c-cap-b-c">Membuktikan Hukum 2: ((A ∪ B)^c = A^c ∩ B^c)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan:</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#absorption-laws-dalam-teori-himpunan">2. Absorption Laws dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi-untuk-gabungan-union">1. <strong>Hukum Absorpsi untuk Gabungan (Union)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi-untuk-gabungan-union"><strong>Hukum Absorpsi untuk Gabungan (Union)</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi-untuk-irisan-intersection">2. <strong>Hukum Absorpsi untuk Irisan (Intersection)</strong></a></li>
 </ul>
 </li>
@@ -410,7 +409,7 @@ document.write(`
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-intuitif">Penjelasan Intuitif</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-laws-dalam-teori-himpunan">Complement Laws dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplemen-dari-himpunan-semesta-universal-set-adalah-himpunan-kosong">1. <strong>Komplemen dari Himpunan Semesta (Universal Set) adalah Himpunan Kosong</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplemen-dari-himpunan-semesta-universal-set-adalah-himpunan-kosong"><strong>Komplemen dari Himpunan Semesta (Universal Set) adalah Himpunan Kosong</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplemen-dari-himpunan-itu-sendiri-adalah-himpunan-kosong">2. <strong>Komplemen dari Himpunan itu Sendiri adalah Himpunan Kosong</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-dengan-contoh-soal">Bukti dengan Contoh Soal</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#misalkan">Misalkan:</a></li>
@@ -444,18 +443,17 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="hukum-de-morgan-dalam-teori-himpunan">
-<h1>1. Hukum De Morgan dalam Teori Himpunan<a class="headerlink" href="#hukum-de-morgan-dalam-teori-himpunan" title="Link to this heading">#</a></h1>
+<h1>Hukum De Morgan dalam Teori Himpunan<a class="headerlink" href="#hukum-de-morgan-dalam-teori-himpunan" title="Link to this heading">#</a></h1>
 <p>Hukum De Morgan terdiri dari dua aturan utama:</p>
 <ol class="arabic">
 <li><p><strong>Komplemen dari Irisan (Intersection)</strong>:
-[
-A \cap B^c = A^c \cup B^c
+[A ∩ B^c = A^c ∪ B^c
 ]</p>
 <p><strong>Penjelasan</strong>: Komplemen dari irisan dua himpunan adalah himpunan elemen yang bukan anggota dari kedua himpunan tersebut, yaitu anggota yang berada di luar A atau B. Hasilnya sama dengan gabungan dari komplemen masing-masing himpunan.</p>
 </li>
 <li><p><strong>Komplemen dari Gabungan (Union)</strong>:
 [
-(A \cup B)^c = A^c \cap B^c
+(A ∪ B)^c = A^c ∩ B^c
 ]</p>
 <p><strong>Penjelasan</strong>: Komplemen dari gabungan dua himpunan adalah himpunan elemen yang tidak ada di salah satu himpunan tersebut. Ini sama dengan irisan dari komplemen himpunan A dan B.</p>
 </li>
@@ -472,16 +470,16 @@ A \cap B^c = A^c \cup B^c
 <li><p>U = {1, 2, 3, 4, 5, 6, 7, 8}</p></li>
 </ul>
 <section id="membuktikan-hukum-1-a-cap-b-c-a-c-cup-b-c">
-<h3>Membuktikan Hukum 1: ((A \cap B)^c = A^c \cup B^c)<a class="headerlink" href="#membuktikan-hukum-1-a-cap-b-c-a-c-cup-b-c" title="Link to this heading">#</a></h3>
+<h3>Membuktikan Hukum 1: ((A ∩ B)^c = A^c ∪ B^c)<a class="headerlink" href="#membuktikan-hukum-1-a-cap-b-c-a-c-cup-b-c" title="Link to this heading">#</a></h3>
 <p><strong>Langkah-langkah:</strong></p>
 <ol class="arabic">
 <li><p><strong>Irisan A dan B (A ∩ B)</strong>:
 [
-A \cap B = {3, 4}
+A ∩ B = {3, 4}
 ]</p></li>
 <li><p><strong>Komplemen dari A ∩ B ((A ∩ B)^c)</strong>:
 [
-(A \cap B)^c = U - {3, 4} = {1, 2, 5, 6, 7, 8}
+(A ∩ B)^c = U - {3, 4} = {1, 2, 5, 6, 7, 8}
 ]</p></li>
 <li><p><strong>Komplemen A (A^c) dan Komplemen B (B^c)</strong>:</p>
 <ul class="simple">
@@ -497,27 +495,27 @@ B^c = U - B = {1, 2, 7, 8}
 </li>
 <li><p><strong>Gabungan dari Komplemen A dan B (A^c ∪ B^c)</strong>:
 [
-A^c \cup B^c = {5, 6, 7, 8} \cup {1, 2, 7, 8} = {1, 2, 5, 6, 7, 8}
+A^c ∪ B^c = {5, 6, 7, 8} ∪ {1, 2, 7, 8} = {1, 2, 5, 6, 7, 8}
 ]</p></li>
 <li><p><strong>Hasil</strong>:
 [
-(A \cap B)^c = A^c \cup B^c = {1, 2, 5, 6, 7, 8}
+(A ∩ B)^c = A^c ∪ B^c = {1, 2, 5, 6, 7, 8}
 ]</p>
 <p>Ini membuktikan bahwa Hukum 1 benar.</p>
 </li>
 </ol>
 </section>
 <section id="membuktikan-hukum-2-a-cup-b-c-a-c-cap-b-c">
-<h3>Membuktikan Hukum 2: ((A \cup B)^c = A^c \cap B^c)<a class="headerlink" href="#membuktikan-hukum-2-a-cup-b-c-a-c-cap-b-c" title="Link to this heading">#</a></h3>
+<h3>Membuktikan Hukum 2: ((A ∪ B)^c = A^c ∩ B^c)<a class="headerlink" href="#membuktikan-hukum-2-a-cup-b-c-a-c-cap-b-c" title="Link to this heading">#</a></h3>
 <p><strong>Langkah-langkah:</strong></p>
 <ol class="arabic">
 <li><p><strong>Gabungan A dan B (A ∪ B)</strong>:
 [
-A \cup B = {1, 2, 3, 4, 5, 6}
+A ∪ B = {1, 2, 3, 4, 5, 6}
 ]</p></li>
 <li><p><strong>Komplemen dari A ∪ B ((A ∪ B)^c)</strong>:
 [
-(A \cup B)^c = U - {1, 2, 3, 4, 5, 6} = {7, 8}
+(A ∪ B)^c = U - {1, 2, 3, 4, 5, 6} = {7, 8}
 ]</p></li>
 <li><p><strong>Komplemen A (A^c) dan Komplemen B (B^c)</strong>:</p>
 <ul class="simple">
@@ -527,11 +525,11 @@ A \cup B = {1, 2, 3, 4, 5, 6}
 </li>
 <li><p><strong>Irisan dari Komplemen A dan B (A^c ∩ B^c)</strong>:
 [
-A^c \cap B^c = {5, 6, 7, 8} \cap {1, 2, 7, 8} = {7, 8}
+A^c ∩ B^c = {5, 6, 7, 8} ∩ {1, 2, 7, 8} = {7, 8}
 ]</p></li>
 <li><p><strong>Hasil</strong>:
 [
-(A \cup B)^c = A^c \cap B^c = {7, 8}
+(A ∪ B)^c = A^c ∩ B^c = {7, 8}
 ]</p>
 <p>Ini membuktikan bahwa Hukum 2 benar.</p>
 </li>
@@ -548,16 +546,16 @@ A^c \cap B^c = {5, 6, 7, 8} \cap {1, 2, 7, 8} = {7, 8}
 <h1>2. Absorption Laws dalam Teori Himpunan<a class="headerlink" href="#absorption-laws-dalam-teori-himpunan" title="Link to this heading">#</a></h1>
 <p><strong>Absorption Law</strong> dalam teori himpunan menyederhanakan operasi gabungan (union) dan irisan (intersection). Terdapat dua bentuk dari hukum ini:</p>
 <section id="hukum-absorpsi-untuk-gabungan-union">
-<h2>1. <strong>Hukum Absorpsi untuk Gabungan (Union)</strong><a class="headerlink" href="#hukum-absorpsi-untuk-gabungan-union" title="Link to this heading">#</a></h2>
+<h2><strong>Hukum Absorpsi untuk Gabungan (Union)</strong><a class="headerlink" href="#hukum-absorpsi-untuk-gabungan-union" title="Link to this heading">#</a></h2>
 <p>[
-A \cup (A \cap B) = A
+A ∪ (A ∩ B) = A
 ]
 Artinya, jika kita melakukan operasi gabungan antara himpunan (A) dan hasil dari irisan (A) dengan (B), hasil akhirnya adalah himpunan (A).</p>
 </section>
 <section id="hukum-absorpsi-untuk-irisan-intersection">
 <h2>2. <strong>Hukum Absorpsi untuk Irisan (Intersection)</strong><a class="headerlink" href="#hukum-absorpsi-untuk-irisan-intersection" title="Link to this heading">#</a></h2>
 <p>[
-A \cap (A \cup B) = A
+A ∩ (A ∪ B) = A
 ]
 Artinya, jika kita melakukan operasi irisan antara himpunan (A) dan hasil dari gabungan (A) dengan (B), hasil akhirnya adalah himpunan (A).</p>
 </section>
@@ -572,19 +570,19 @@ A = {1, 2, 3}, \quad B = {2, 3, 4}
 ]</p>
 <p>Mari kita buktikan bahwa:
 [
-A \cup (A \cap B) = A
+A ∪ (A ∩ B) = A
 ]</p>
 <section id="langkah-langkah">
 <h3>Langkah-langkah:<a class="headerlink" href="#langkah-langkah" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p><strong>Cari Irisan (A \cap B)</strong>:
+<li><p><strong>Cari Irisan (A ∩ B)</strong>:
 [
-A \cap B = {2, 3}
+A ∩ B = {2, 3}
 ]
 Karena (2) dan (3) ada di kedua himpunan (A) dan (B).</p></li>
-<li><p><strong>Gabungkan (A) dengan (A \cap B)</strong>:
+<li><p><strong>Gabungkan (A) dengan (A ∩ B)</strong>:
 [
-A \cup (A \cap B) = {1, 2, 3} \cup {2, 3} = {1, 2, 3}
+A ∪ (A ∩ B) = {1, 2, 3} ∪ {2, 3} = {1, 2, 3}
 ]</p></li>
 <li><p><strong>Kesimpulan</strong>:
 Hasil akhirnya adalah (A), sehingga hukum absorsi untuk gabungan terbukti benar.</p></li>
@@ -595,18 +593,18 @@ Hasil akhirnya adalah (A), sehingga hukum absorsi untuk gabungan terbukti benar.
 <h2>Contoh 2: Hukum Absorpsi untuk Irisan (Intersection)<a class="headerlink" href="#contoh-2-hukum-absorpsi-untuk-irisan-intersection" title="Link to this heading">#</a></h2>
 <p>Sekarang, mari kita buktikan bahwa:
 [
-A \cap (A \cup B) = A
+A ∩ (A ∪ B) = A
 ]</p>
 <section id="id1">
 <h3>Langkah-langkah:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p><strong>Cari Gabungan (A \cup B)</strong>:
+<li><p><strong>Cari Gabungan (A ∪ B)</strong>:
 [
-A \cup B = {1, 2, 3, 4}
+A ∪ B = {1, 2, 3, 4}
 ]</p></li>
-<li><p><strong>Cari Irisan antara (A) dan (A \cup B)</strong>:
+<li><p><strong>Cari Irisan antara (A) dan (A ∪ B)</strong>:
 [
-A \cap (A \cup B) = {1, 2, 3} \cap {1, 2, 3, 4} = {1, 2, 3}
+A ∩ (A ∪ B) = {1, 2, 3} ∩ {1, 2, 3, 4} = {1, 2, 3}
 ]</p></li>
 <li><p><strong>Kesimpulan</strong>:
 Hasil akhirnya adalah (A), sehingga hukum absorsi untuk irisan terbukti benar.</p></li>
@@ -617,7 +615,7 @@ Hasil akhirnya adalah (A), sehingga hukum absorsi untuk irisan terbukti benar.</
 <section id="penjelasan-intuitif">
 <h1>Penjelasan Intuitif<a class="headerlink" href="#penjelasan-intuitif" title="Link to this heading">#</a></h1>
 <ul class="simple">
-<li><p><strong>Hukum Absorpsi untuk Gabungan</strong> menyatakan bahwa jika kita sudah memiliki seluruh elemen dari (A), maka menambahkan bagian (A \cap B) tidak akan mengubah hasil, karena (A) sudah mencakup semua elemen tersebut.</p></li>
+<li><p><strong>Hukum Absorpsi untuk Gabungan</strong> menyatakan bahwa jika kita sudah memiliki seluruh elemen dari (A), maka menambahkan bagian (A ∩ B) tidak akan mengubah hasil, karena (A) sudah mencakup semua elemen tersebut.</p></li>
 <li><p><strong>Hukum Absorpsi untuk Irisan</strong> menyatakan bahwa ketika kita mencari irisan dari (A) dengan gabungan (A) dan (B), himpunan (A) sudah sepenuhnya terdapat di dalam gabungan tersebut, sehingga hasilnya tetap (A).</p></li>
 </ul>
 <p>Hukum ini sangat berguna dalam menyederhanakan ekspresi himpunan dalam banyak kasus.</p>
@@ -627,16 +625,16 @@ Hasil akhirnya adalah (A), sehingga hukum absorsi untuk irisan terbukti benar.</
 <h1>Complement Laws dalam Teori Himpunan<a class="headerlink" href="#complement-laws-dalam-teori-himpunan" title="Link to this heading">#</a></h1>
 <p><strong>Complement Laws</strong> menggambarkan hubungan antara suatu himpunan dengan komplemennya. Ada dua hukum utama:</p>
 <section id="komplemen-dari-himpunan-semesta-universal-set-adalah-himpunan-kosong">
-<h2>1. <strong>Komplemen dari Himpunan Semesta (Universal Set) adalah Himpunan Kosong</strong><a class="headerlink" href="#komplemen-dari-himpunan-semesta-universal-set-adalah-himpunan-kosong" title="Link to this heading">#</a></h2>
+<h2><strong>Komplemen dari Himpunan Semesta (Universal Set) adalah Himpunan Kosong</strong><a class="headerlink" href="#komplemen-dari-himpunan-semesta-universal-set-adalah-himpunan-kosong" title="Link to this heading">#</a></h2>
 <p>[
-A \cup A^c = U
+A ∪ A^c = U
 ]
 Himpunan <strong>A</strong> gabung komplemen <strong>A</strong> sama dengan himpunan semesta <strong>U</strong>.</p>
 </section>
 <section id="komplemen-dari-himpunan-itu-sendiri-adalah-himpunan-kosong">
 <h2>2. <strong>Komplemen dari Himpunan itu Sendiri adalah Himpunan Kosong</strong><a class="headerlink" href="#komplemen-dari-himpunan-itu-sendiri-adalah-himpunan-kosong" title="Link to this heading">#</a></h2>
 <p>[
-A \cap A^c = \emptyset
+A ∩ A^c = \emptyset
 ]
 Himpunan <strong>A</strong> irisan dengan komplemen <strong>A</strong> adalah himpunan kosong.</p>
 </section>
@@ -654,7 +652,7 @@ Himpunan <strong>A</strong> irisan dengan komplemen <strong>A</strong> adalah hi
 <h3>Contoh 1: <strong>Komplemen dari Gabungan (Union)</strong><a class="headerlink" href="#contoh-1-komplemen-dari-gabungan-union" title="Link to this heading">#</a></h3>
 <p>Buktikan bahwa:<br />
 [
-A \cup A^c = U
+A ∪ A^c = U
 ]</p>
 <p><strong>Langkah 1:</strong><br />
 Gabungkan himpunan <strong>A</strong> dan komplemennya <strong>A^c</strong>:</p>
@@ -665,18 +663,18 @@ Gabungkan himpunan <strong>A</strong> dan komplemennya <strong>A^c</strong>:</p>
 <p><strong>Langkah 2:</strong><br />
 Lakukan operasi gabungan (union):
 [
-A \cup A^c = {1, 2, 3, 4, 5} \cup {6, 7, 8, 9, 10} = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+A ∪ A^c = {1, 2, 3, 4, 5} ∪ {6, 7, 8, 9, 10} = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 ]</p>
 <p>Hasilnya adalah himpunan semesta <strong>U</strong>, yang membuktikan hukum:
 [
-A \cup A^c = U
+A ∪ A^c = U
 ]</p>
 </section>
 <section id="contoh-2-komplemen-dari-irisan-intersection">
 <h3>Contoh 2: <strong>Komplemen dari Irisan (Intersection)</strong><a class="headerlink" href="#contoh-2-komplemen-dari-irisan-intersection" title="Link to this heading">#</a></h3>
 <p>Buktikan bahwa:<br />
 [
-A \cap A^c = \emptyset
+A ∩ A^c = \emptyset
 ]</p>
 <p><strong>Langkah 1:</strong><br />
 Iriskan himpunan <strong>A</strong> dan komplemennya <strong>A^c</strong>:</p>
@@ -687,11 +685,11 @@ Iriskan himpunan <strong>A</strong> dan komplemennya <strong>A^c</strong>:</p>
 <p><strong>Langkah 2:</strong><br />
 Lakukan operasi irisan (intersection):
 [
-A \cap A^c = {1, 2, 3, 4, 5} \cap {6, 7, 8, 9, 10} = \emptyset
+A ∩ A^c = {1, 2, 3, 4, 5} ∩ {6, 7, 8, 9, 10} = \emptyset
 ]</p>
 <p>Hasilnya adalah himpunan kosong <strong>∅</strong>, yang membuktikan hukum:
 [
-A \cap A^c = \emptyset
+A ∩ A^c = \emptyset
 ]</p>
 </section>
 </section>
@@ -817,17 +815,17 @@ Space komplexity adalah ukuran seberapa banyak memori yang dibutuhkan suatu algo
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. Hukum De Morgan dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Hukum De Morgan dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal-pembuktian-hukum-de-morgan">Contoh Soal: Pembuktian Hukum De Morgan</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-hukum-1-a-cap-b-c-a-c-cup-b-c">Membuktikan Hukum 1: ((A \cap B)^c = A^c \cup B^c)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-hukum-2-a-cup-b-c-a-c-cap-b-c">Membuktikan Hukum 2: ((A \cup B)^c = A^c \cap B^c)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-hukum-1-a-cap-b-c-a-c-cup-b-c">Membuktikan Hukum 1: ((A ∩ B)^c = A^c ∪ B^c)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-hukum-2-a-cup-b-c-a-c-cap-b-c">Membuktikan Hukum 2: ((A ∪ B)^c = A^c ∩ B^c)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan:</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#absorption-laws-dalam-teori-himpunan">2. Absorption Laws dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi-untuk-gabungan-union">1. <strong>Hukum Absorpsi untuk Gabungan (Union)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi-untuk-gabungan-union"><strong>Hukum Absorpsi untuk Gabungan (Union)</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi-untuk-irisan-intersection">2. <strong>Hukum Absorpsi untuk Irisan (Intersection)</strong></a></li>
 </ul>
 </li>
@@ -844,7 +842,7 @@ Space komplexity adalah ukuran seberapa banyak memori yang dibutuhkan suatu algo
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-intuitif">Penjelasan Intuitif</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-laws-dalam-teori-himpunan">Complement Laws dalam Teori Himpunan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplemen-dari-himpunan-semesta-universal-set-adalah-himpunan-kosong">1. <strong>Komplemen dari Himpunan Semesta (Universal Set) adalah Himpunan Kosong</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplemen-dari-himpunan-semesta-universal-set-adalah-himpunan-kosong"><strong>Komplemen dari Himpunan Semesta (Universal Set) adalah Himpunan Kosong</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komplemen-dari-himpunan-itu-sendiri-adalah-himpunan-kosong">2. <strong>Komplemen dari Himpunan itu Sendiri adalah Himpunan Kosong</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-dengan-contoh-soal">Bukti dengan Contoh Soal</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#misalkan">Misalkan:</a></li>

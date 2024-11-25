@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to your Jupyter Book &#8212; My sample book</title>
+    <title>Social Network Analysis (SNA) &#8212; My sample book</title>
   
   
   
@@ -59,10 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'analisagraph';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="logika matematika" href="logika%20dan%20pembuktian.html" />
+    <link rel="prev" title="Aljabar Boolean &amp; Gerbang Logika" href="aljabarbooleandangerbanglogika.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +143,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -156,9 +154,7 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
-  
+  <img src="_static/discrete_math_logo.png" class="logo__image only-dark" alt="Discrete Mathematics - Home">
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -176,25 +172,24 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
-                    Welcome to your Jupyter Book
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Matdis
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="logika%20dan%20pembuktian.html">logika matematika</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html">1. Hukum De Morgan dalam Teori Himpunan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="himpunan.html">Teori Himpunan</a></li>
 
 
 
 
 
 <li class="toctree-l1"><a class="reference internal" href="aljabarbooleandangerbanglogika.html">Aljabar Boolean &amp; Gerbang Logika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analisagraph.html">Social Network Analysis (SNA)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deret.html">Deretan dan Rekursi</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">analisagraph</a></li>
 </ul>
 
     </div>
@@ -266,7 +261,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fanalisagraph.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -296,7 +291,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/analisagraph.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -367,7 +362,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -378,11 +375,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to your Jupyter Book</h1>
+    <h1>Social Network Analysis (SNA)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigen-vector-centrality">Eigen Vector Centrality</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -392,29 +400,48 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-your-jupyter-book">
-<h1>Welcome to your Jupyter Book<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Link to this heading">#</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a> for more information.</p>
-<p>Check out the content pages bundled with this sample book to see more.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="logika%20dan%20pembuktian.html">logika matematika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="logika%20dan%20pembuktian.html#id9"></a></li>
-<li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html">1. Hukum De Morgan dalam Teori Himpunan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html#absorption-laws-dalam-teori-himpunan">2. Absorption Laws dalam Teori Himpunan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html#contoh-soal-dan-pembuktian">Contoh Soal dan Pembuktian</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html#penjelasan-intuitif">Penjelasan Intuitif</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html#complement-laws-dalam-teori-himpunan">Complement Laws dalam Teori Himpunan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html#algoritma">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="aljabarbooleandangerbanglogika.html">Aljabar Boolean &amp; Gerbang Logika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analisagraph.html">Social Network Analysis (SNA)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deret.html">Deretan dan Rekursi</a></li>
-</ul>
-</div>
+  <section id="social-network-analysis-sna">
+<h1>Social Network Analysis (SNA)<a class="headerlink" href="#social-network-analysis-sna" title="Link to this heading">#</a></h1>
+<p>Sistem analisis data yang berfungsi membuat data lebih terstruktur agar mudah dalam melakukan pengukuran. SNA merupakan analisis yang memiliki fungsi dalam menggambarkan bagaimana struktur sosial dan hubungan antar struktur sosial.</p>
+<p>SNA menggambarkan struktur yang saling berhubungan, merepresentasikan individu atau sistem dalam suatu jaringan (nodes), maupun yang menggambarkan hubungan atau interaksi antar individu tersebut (edges).</p>
+<p>Berikut adalah penjelasan tentang berbagai metrik sentralitas yang digunakan dalam analisis jaringan:</p>
+<section id="degree-centrality">
+<h2>Degree Centrality<a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h2>
+<p>Degree centrality mengukur jumlah koneksi langsung (edges) yang dimiliki suatu node. Node dengan degree centrality tinggi dianggap sebagai pusat dari jaringan karena memiliki banyak hubungan langsung dengan node lainnya. Misalnya, dalam jaringan sosial, seseorang dengan banyak koneksi akan memiliki nilai degree centrality yang tinggi.
+Rumusnya adalah:</p>
+<div class="math notranslate nohighlight">
+\[
+C_D(v) = \frac{\text{deg}(v)}{n - 1}
+\]</div>
+<p>Di mana:</p>
+<p>deg(v) : jumlah koneksi langsung dari node v
+n : total jumlah node dalam jaringan.</p>
+</section>
+<section id="betweenness-centrality">
+<h2>Betweenness Centrality<a class="headerlink" href="#betweenness-centrality" title="Link to this heading">#</a></h2>
+<p>Betweenness centrality mengevaluasi sejauh mana sebuah node berada di antara node-node lainnya dalam jaringan. Ini didasarkan pada jumlah jalur terpendek di mana node tersebut menjadi perantara. Node dengan nilai betweenness tinggi dianggap penting karena berfungsi sebagai penghubung antar bagian jaringan, memungkinkan informasi atau sumber daya mengalir lebih efisien.
+Rumusnya adalah:
+$<span class="math notranslate nohighlight">\(
+C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
+\)</span>$
+Penjelasan untuk simbol-simbolnya:</p>
+<p>𝜎𝑠𝑡 σ st : Jumlah jalur terpendek antara node s dan t.
+𝜎𝑠𝑡(𝑣)σ st(v): Jumlah jalur terpendek antara s dan t yang melewati node v.</p>
+</section>
+<section id="closeness-centrality">
+<h2>Closeness Centrality<a class="headerlink" href="#closeness-centrality" title="Link to this heading">#</a></h2>
+<p>Closeness centrality mengukur kedekatan sebuah node terhadap semua node lainnya dalam jaringan. Ini dihitung berdasarkan jarak rata-rata dari satu node ke semua node lainnya. Node dengan nilai closeness tinggi memiliki akses lebih cepat ke seluruh jaringan karena berada di posisi strategis
+<img alt="image" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fnextgen.web.id%2Fmengenal-hubungan-manusia-dengan-social-network-analysis%2F" /></p>
+</section>
+<section id="eigen-vector-centrality">
+<h2>Eigen Vector Centrality<a class="headerlink" href="#eigen-vector-centrality" title="Link to this heading">#</a></h2>
+<p>Sentralitas vektor eigen adalah algoritma yang mengukur pengaruh suatu simpul dalam jaringan yang terhubung. Sentralitas vektor eigen juga disebut sebagai sentralitas eigen atau skor prestise
+Rumus :
+<img alt="image" src="https://hackmd.io/_uploads/B1RC98_Gke.png" /></p>
+<p>referensi by:
+<a class="reference external" href="https://www.sbm.itb.ac.id/id/2023/07/20/menganalisa-data-besar-dengan-social-network-analysis-sna/">https://www.sbm.itb.ac.id/id/2023/07/20/menganalisa-data-besar-dengan-social-network-analysis-sna/</a>
+<a class="reference external" href="https://ejurnal.stmik-budidarma.ac.id/index.php/jurikom/article/download/4053/2709">https://ejurnal.stmik-budidarma.ac.id/index.php/jurikom/article/download/4053/2709</a></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -447,14 +474,14 @@ It does not go in-depth into any particular topic - check out <a class="referenc
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="logika%20dan%20pembuktian.html"
-       title="next page">
+    <a class="left-prev"
+       href="aljabarbooleandangerbanglogika.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">logika matematika</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Aljabar Boolean &amp; Gerbang Logika</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -462,6 +489,24 @@ It does not go in-depth into any particular topic - check out <a class="referenc
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigen-vector-centrality">Eigen Vector Centrality</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

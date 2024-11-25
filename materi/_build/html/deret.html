@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to your Jupyter Book &#8212; My sample book</title>
+    <title>Deretan dan Rekursi &#8212; My sample book</title>
   
   
   
@@ -57,12 +57,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'deret';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="logika matematika" href="logika%20dan%20pembuktian.html" />
+    <link rel="prev" title="Social Network Analysis (SNA)" href="analisagraph.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +123,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +141,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,13 +172,13 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to your Jupyter Book
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="logika%20dan%20pembuktian.html">logika matematika</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
@@ -194,7 +190,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="aljabarbooleandangerbanglogika.html">Aljabar Boolean &amp; Gerbang Logika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analisagraph.html">Social Network Analysis (SNA)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deret.html">Deretan dan Rekursi</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Deretan dan Rekursi</a></li>
 </ul>
 
     </div>
@@ -266,7 +262,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fderet.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -296,7 +292,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/deret.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -367,7 +363,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -378,11 +376,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to your Jupyter Book</h1>
+    <h1>Deretan dan Rekursi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-deretan-sequence">Pengertian Deretan (<em>sequence</em>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-contoh-deretan">Contoh-contoh Deretan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-deretan">Penjumlahan Deretan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-rekursi">Pengertian Rekursi</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -392,29 +401,116 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-your-jupyter-book">
-<h1>Welcome to your Jupyter Book<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Link to this heading">#</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a> for more information.</p>
-<p>Check out the content pages bundled with this sample book to see more.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="logika%20dan%20pembuktian.html">logika matematika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="logika%20dan%20pembuktian.html#id9"></a></li>
-<li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html">1. Hukum De Morgan dalam Teori Himpunan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html#absorption-laws-dalam-teori-himpunan">2. Absorption Laws dalam Teori Himpunan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html#contoh-soal-dan-pembuktian">Contoh Soal dan Pembuktian</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html#penjelasan-intuitif">Penjelasan Intuitif</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html#complement-laws-dalam-teori-himpunan">Complement Laws dalam Teori Himpunan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="himpunan.html#algoritma">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="aljabarbooleandangerbanglogika.html">Aljabar Boolean &amp; Gerbang Logika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analisagraph.html">Social Network Analysis (SNA)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deret.html">Deretan dan Rekursi</a></li>
+  <section id="deretan-dan-rekursi">
+<h1>Deretan dan Rekursi<a class="headerlink" href="#deretan-dan-rekursi" title="Link to this heading">#</a></h1>
+<section id="pengertian-deretan-sequence">
+<h2>Pengertian Deretan (<em>sequence</em>)<a class="headerlink" href="#pengertian-deretan-sequence" title="Link to this heading">#</a></h2>
+<p><strong>Deretan</strong> adalah suatu urutan atau susunan elemen atau objek yang disusun secara teratur berdasarkan suatu aturan tertentu. Elemen dalam deretan biasanya berupa angka, huruf, simbol, atau objek lainnya, dan urutannya dapat didasarkan pada pola, nilai, atau hubungan tertentu
+<strong>Definisinya</strong> yaitu Sebuah deretan adalah fungsi dari subset suatu himpunan bilangan bulat (biasanya N atau P) ke sebuah himpunan S.</p>
+<p>N = {1, 2, 3, 4,}
+S misalnya {2,4,6,8}, {1/3,1/5,1/7}</p>
+<p><strong>Notasi Deretan</strong> : {an}
+<strong>Deretan</strong> umumnya dinyatakan dalam suatu formula, misalnya:
+an = 2n
+an = 1/n
+an = 7 – 3n</p>
+<p>Dalam konteks matematika, deretan sering merujuk pada barisan bilangan, yaitu kumpulan bilangan yang disusun dalam suatu pola tertentu.</p>
+</section>
+<section id="contoh-contoh-deretan">
+<h2>Contoh-contoh Deretan<a class="headerlink" href="#contoh-contoh-deretan" title="Link to this heading">#</a></h2>
+<p><em><strong>Deret Aritmetika</strong></em>
+Deret dengan pola kenaikan atau penurunan tetap.</p>
+<ul class="simple">
+<li><p>Contoh: 2,5,8,11,14,…</p></li>
+<li><p>Rumus suku ke-n:
+<img alt="Screenshot 2024-11-23 214020" src="https://hackmd.io/_uploads/BJ2DFw1Qkx.png" />
+Di mana:</p></li>
+<li><p>𝑎: suku pertama</p></li>
+<li><p>𝑏: beda (selisih antar suku</p></li>
+<li><p>𝑛: nomor suku yang dicari</p></li>
 </ul>
-</div>
+<p><em><strong>Deret Geometri</strong></em>
+Deret dengan pola kelipatan tetap.</p>
+<ul class="simple">
+<li><p>Contoh: 3,6,12,24,48,…</p></li>
+<li><p>Rumus suku ke-n:
+<img alt="Screenshot 2024-11-23 214239" src="https://hackmd.io/_uploads/H1zeqv1X1l.png" />
+Di mana:</p></li>
+<li><p>𝑎: suku pertama</p></li>
+<li><p>𝑟: rasio (perbandingan antar suku,</p></li>
+<li><p>𝑛: nomor suku yang dicari</p></li>
+</ul>
+<p><em><strong>Deret Bilangan Kuadrat</strong></em>
+Deret dengan pola nilai berupa kuadrat bilangan bulat.</p>
+<ul class="simple">
+<li><p>Contoh: 1,4,9,16,25,…</p></li>
+<li><ul>
+<li><p>Rumus suku ke-n:
+<img alt="Screenshot 2024-11-23 214619" src="https://hackmd.io/_uploads/H1H0cDkQkl.png" /></p></li>
+</ul>
+</li>
+</ul>
+<p><em><strong>Deret Bilangan Kubik</strong></em>
+Deret dengan pola nilai berupa kubik bilangan bulat.</p>
+<ul class="simple">
+<li><p>Contoh: 1,8,27,64,125,…</p></li>
+<li><p>Rumus suku ke-n:
+<img alt="Screenshot 2024-11-23 214742" src="https://hackmd.io/_uploads/Hk-Qovy7ke.png" /></p></li>
+</ul>
+<p><em><strong>Deret Fibonacci</strong></em>
+Deret dengan pola di mana setiap suku merupakan jumlah dua suku sebelumnya.</p>
+<ul class="simple">
+<li><p>Contoh: 0,1,1,2,3,5,8,…</p></li>
+<li><p>Rumus suku ke-n (rekursif):
+<img alt="Screenshot 2024-11-23 214844" src="https://hackmd.io/_uploads/ryA8jvk71x.png" /></p></li>
+</ul>
+</section>
+<section id="penjumlahan-deretan">
+<h2>Penjumlahan Deretan<a class="headerlink" href="#penjumlahan-deretan" title="Link to this heading">#</a></h2>
+<p>Jumlah Deretan
+<img alt="Screenshot 2024-11-23 215027" src="https://hackmd.io/_uploads/rkL0sPym1g.png" />
+adalah
+<img alt="Screenshot 2024-11-23 215043" src="https://hackmd.io/_uploads/ByNk3Pk7yl.png" />
+atau dalam notasi sumasi:
+<img alt="Screenshot 2024-11-23 215124" src="https://hackmd.io/_uploads/S1pghvk71e.png" />
+k adalah indeks summasi,
+m adalah batas bawah indeks,
+n adalah batas atas indeks</p>
+</section>
+<section id="pengertian-rekursi">
+<h2>Pengertian Rekursi<a class="headerlink" href="#pengertian-rekursi" title="Link to this heading">#</a></h2>
+<p>Rekursi adalah Sebuah objek dikatakan rekursif  (recursive) jika ia didefinisikan dalam terminologi dirinya sendiri.Proses mendefinisikan objek dalam terminologi dirinya sendiri disebut rekursi (recursion).</p>
+<p><em><strong>Fungsi Rekursi</strong></em>
+Fungsi rekursif didefinisikan oleh dua bagian :</p>
+<ul class="simple">
+<li><p><strong>Basis</strong>
+Bagian yang berisi nilai fungsi yang terdefinisi secara eksplisit.Bagian ini juga sekaligus menghentikan rekursif (dan memberikan sebuah nilai yang terdefinisi pada fungsi rekursif).</p></li>
+<li><p><strong>Rekurens</strong>
+Bagian ini mendefinisikan fungsi dalam terminologi dirinya sendiri.Berisi kaidah untuk menemukan nilai fungsi pada suatu input dari nilai-nilai lainnya pada input yang lebih kecil.
+<strong>Contoh</strong>
+Misalkan f didefinsikan secara rekusif sbb
+<img alt="Screenshot 2024-11-23 215825" src="https://hackmd.io/_uploads/HJBoav1Xyg.png" />
+Tentukan nilai f(4)!
+Solusi:      f(4) = 2f(3) + 4
+=  2(2f(2) + 4) + 4
+=  2(2(2f(1) + 4) + 4) + 4
+=  2(2(2(2f(0) + 4) + 4) + 4) + 4
+=  2(2(2(23 + 4) + 4) + 4) + 4	
+=  2(2(2(10) + 4) + 4) + 4
+=  2(2(24) + 4) + 4
+=  2(52) + 4
+= 108</p></li>
+</ul>
+<p><em><strong>Struktur Rekursif</strong></em>
+Struktur data yang penting dalam komputer adalah pohon biner (binary tree).
+<img alt="Screenshot 2024-11-23 220101" src="https://hackmd.io/_uploads/HylrCvJQ1e.png" /></p>
+<ul class="simple">
+<li><p>Simpul (node) pada pohon biner mempunyai paling banyak dua buah anak.</p></li>
+<li><p>Jumlah anak pada setiap simpul bisa 1, 2, atau 0.</p></li>
+<li><p>Simpul yang mempunyai anak disebut simpul cabang (branch node) atau simpul dalam (internal node)</p></li>
+<li><p>Simpul yang tidak mempunyai anak disebut simpul daun (leave).</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -447,14 +543,14 @@ It does not go in-depth into any particular topic - check out <a class="referenc
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="logika%20dan%20pembuktian.html"
-       title="next page">
+    <a class="left-prev"
+       href="analisagraph.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">logika matematika</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Social Network Analysis (SNA)</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -462,6 +558,24 @@ It does not go in-depth into any particular topic - check out <a class="referenc
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-deretan-sequence">Pengertian Deretan (<em>sequence</em>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-contoh-deretan">Contoh-contoh Deretan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-deretan">Penjumlahan Deretan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-rekursi">Pengertian Rekursi</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
